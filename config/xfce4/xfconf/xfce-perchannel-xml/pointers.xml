@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="pointers" version="1.0">
+  <property name="Logitech_Wireless_Keyboard_PID4023" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="6"/>
+    <property name="Acceleration" type="double" value="1.3"/>
+  </property>
+  <property name="Logitech_Wireless_Mouse" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="7.5999999999999996"/>
+    <property name="ReverseScrolling" type="bool" value="false"/>
+  </property>
+</channel>

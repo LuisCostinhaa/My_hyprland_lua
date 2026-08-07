@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>org.gnome.Meld</icon>
+	<name>Compare</name>
+	<submenu></submenu>
+	<unique-id>1655833252219074-1</unique-id>
+	<command>meld %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>org.xfce.terminal-settings</icon>
+	<name>Open Folder as root</name>
+	<submenu></submenu>
+	<unique-id>1655833359376603-2</unique-id>
+	<command>pkexec thunar %f</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>edit-find</icon>
+	<name>Search</name>
+	<submenu></submenu>
+	<unique-id>1655833487869053-3</unique-id>
+	<command>catfish %f</command>
+	<description>Search files in folder</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>baobab</icon>
+	<name>baobad</name>
+	<submenu></submenu>
+	<unique-id>1740411326923949-1</unique-id>
+	<command>baobab %F</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>Alacritty</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1761575554000163-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

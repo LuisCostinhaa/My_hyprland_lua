@@ -1,0 +1,89 @@
+# Matugen template for btop
+
+
+# Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
+# example for white: "#ffffff", "#ff" or "255 255 255".
+
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#e3e2e0"
+
+# Title color for boxes
+theme[title]="#abcebf"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#bccac2"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#abcebf"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#16362b"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#c1c8c3"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#eebabb"
+
+# Cpu box outline color
+theme[cpu_box]="#8b928e"
+
+# Memory/disks box outline color
+theme[mem_box]="#8b928e"
+
+# Net up/down box outline color
+theme[net_box]="#8b928e"
+
+# Processes box outline color
+theme[proc_box]="#8b928e"
+
+# Box divider line and small boxes line color
+theme[div_line]="#414845"
+
+# Temperature graph colors
+theme[temp_start]="#bccac2"
+theme[temp_mid]="#abcebf"
+theme[temp_end]="#ffb4ab"
+
+# CPU graph colors
+theme[cpu_start]="#bccac2"
+theme[cpu_mid]="#abcebf"
+theme[cpu_end]="#ffb4ab"
+
+# Mem/Disk free meter
+theme[free_start]="#bccac2"
+theme[free_mid]=""
+theme[free_end]="#3f4c46"
+
+# Mem/Disk cached meter
+theme[cached_start]="#eebabb"
+theme[cached_mid]=""
+theme[cached_end]="#351719"
+
+# Mem/Disk available meter
+theme[available_start]="#abcebf"
+theme[available_mid]=""
+theme[available_end]="#03251b"
+
+# Mem/Disk used meter
+theme[used_start]="#ffb4ab"
+theme[used_mid]=""
+theme[used_end]="#93000a"
+
+# Download graph colors
+theme[download_start]="#bccac2"
+theme[download_mid]="#abcebf"
+theme[download_end]="#eebabb"
+
+# Upload graph colors
+theme[upload_start]="#bccac2"
+theme[upload_mid]="#abcebf"
+theme[upload_end]="#eebabb"

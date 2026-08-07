@@ -1,0 +1,91 @@
+/* =============================================================================
+ *
+ * Waybar configuration
+ *
+ *
+ * =========================================================================== */
+
+@import "colors.css";
+
+/* The whole bar */
+#waybar {
+    background:     transparent;
+    color:          @primary;
+    font-family:    "Google Sans Flex Regular";
+    font-weight:    500;
+    font-size:      15px;
+}
+
+/* Each module */
+#clock,
+#workspaces,
+#window,
+#cpu,
+#memory,
+#network,
+#custom-launcher,
+#pulseaudio,
+#custom-updates,
+#temperature {
+    background: @background;
+    padding: 0;
+    margin-top: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    border: 2px solid @inverse_primary;
+}
+
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+#cpu.warning {
+    color: orange;
+}
+
+#cpu.critical {
+    color: red;
+}
+
+#memory {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#memory.warning {
+    color: orange;
+}
+
+#memory.critical {
+    color: red;
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#network.disconnected {
+    color: orange;
+}
+
+#pulseaudio.muted {
+    color: red;
+}
+
+#temperature.critical {
+    color: red;
+}
+
+#workspaces button {
+    padding: 2px 5px;
+    color: @tertiary;
+}
+
+#workspaces button.empty {
+    padding: 2px 5px;
+    color: @primary;
+}
+
+#custom-updates {
+    padding: 0px 0px 0px 10px;
+}

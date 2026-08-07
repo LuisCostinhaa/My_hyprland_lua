@@ -1,0 +1,28 @@
+general.import = ["colors.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Propo", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font Propo", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font Propo", style = "Italic" }
+size = 12
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[keyboard]
+bindings = [
+{ key = "F11", action = "ToggleFullscreen" }
+]

@@ -1,0 +1,170 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="false"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=2;x=3847;y=30"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="38"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="7"/>
+        <value type="int" value="11"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
+        <value type="int" value="18"/>
+        <value type="int" value="3"/>
+        <value type="int" value="12"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="35"/>
+        <value type="int" value="6"/>
+      </property>
+      <property name="output-name" type="string" value="Primary"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="enter-opacity" type="uint" value="95"/>
+      <property name="leave-opacity" type="uint" value="95"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="1"/>
+        <value type="double" value="0.39864864864864863"/>
+      </property>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
+      <property name="wrap-workspaces" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="brave.instance10755;brave.instance1284;brave.instance1286;brave.instance1301;brave.instance1305;brave.instance1307;brave.instance1316;brave.instance1318;brave.instance1322;brave.instance1333;brave.instance1350;brave.instance1351;brave.instance1355;brave.instance1358;brave.instance1361;brave.instance1367;brave.instance1397;brave.instance14605;brave.instance1637;brave.instance1643;brave.instance1644;brave.instance1645;brave.instance1649;brave.instance1659;brave.instance1662;brave.instance1677;brave.instance1681;brave.instance1684;brave.instance1707;brave.instance17240;brave.instance1928;brave.instance2212;brave.instance2340;brave.instance2358;brave.instance2424;brave.instance2428;brave.instance2464;brave.instance2468;brave.instance2482;brave.instance2544;brave.instance2561;brave.instance2630;brave.instance28199;brave.instance2937;brave.instance2965;brave.instance3238;brave.instance3312;brave.instance3370;brave.instance3571;brave.instance4384;brave.instance5001;brave.instance7013;brave.instance8480;brave.instance8956;brave.instance9986;chromium.instance10035;chromium.instance10078;chromium.instance10400;chromium.instance1084;chromium.instance1086;chromium.instance1106;chromium.instance1116;chromium.instance1118;chromium.instance11183;chromium.instance1122;chromium.instance1139;chromium.instance11423;chromium.instance1145;chromium.instance1147;chromium.instance1148;chromium.instance1153;chromium.instance1157;chromium.instance1162;chromium.instance11638;chromium.instance1164;chromium.instance1170;chromium.instance1172;chromium.instance11733;chromium.instance1179;chromium.instance1192;chromium.instance1197;chromium.instance1251;chromium.instance1252;chromium.instance1258;chromium.instance1262;chromium.instance1267;chromium.instance1268;chromium.instance1272;chromium.instance1273;chromium.instance1274;chromium.instance1275;chromium.instance1277;chromium.instance1278;chromium.instance1279;chromium.instance1284;chromium.instance1285;chromium.instance1289;chromium.instance1297;chromium.instance1298;chromium.instance1300;chromium.instance1302;chromium.instance1307;chromium.instance1308;chromium.instance1309;chromium.instance1314;chromium.instance1324;chromium.instance1326;chromium.instance1328;chromium.instance1337;chromium.instance1338;chromium.instance1340;chromium.instance1345;chromium.instance1350;chromium.instance1363;chromium.instance1371;chromium.instance1380;chromium.instance1390;chromium.instance1392;chromium.instance1393;chromium.instance1402;chromium.instance1411;chromium.instance1413;chromium.instance1419;chromium.instance1422;chromium.instance1427;chromium.instance1432;chromium.instance1433;chromium.instance1440;chromium.instance1450;chromium.instance1481;chromium.instance1490;chromium.instance1497;chromium.instance1504;chromium.instance1509;chromium.instance1512;chromium.instance1513;chromium.instance1517;chromium.instance1519;chromium.instance1524;chromium.instance1534;chromium.instance1536;chromium.instance1542;chromium.instance1552;chromium.instance1563;chromium.instance1567;chromium.instance157246;chromium.instance1576;chromium.instance1588;chromium.instance1592;chromium.instance1595;chromium.instance1608;chromium.instance1612;chromium.instance1621;chromium.instance16216;chromium.instance1635;chromium.instance16375;chromium.instance1639;chromium.instance1645;chromium.instance1661;chromium.instance1677;chromium.instance1687;chromium.instance1693;chromium.instance1697;chromium.instance1713;chromium.instance1719;chromium.instance1731;chromium.instance1738;chromium.instance1745;chromium.instance17450;chromium.instance1757;chromium.instance1767;chromium.instance17718;chromium.instance1795;chromium.instance1817;chromium.instance1836;chromium.instance183728;chromium.instance1846;chromium.instance1860;chromium.instance1885;chromium.instance1886;chromium.instance1892;chromium.instance1907;chromium.instance1916;chromium.instance1934;chromium.instance1935;chromium.instance1936;chromium.instance1944;chromium.instance1972;chromium.instance1973;chromium.instance1975;chromium.instance1982;chromium.instance1986;chromium.instance1987;chromium.instance1994;chromium.instance2002;chromium.instance2004;chromium.instance20099;chromium.instance2015;chromium.instance2022;chromium.instance2024;chromium.instance2026;chromium.instance2028;chromium.instance2041;chromium.instance2054;chromium.instance2055;chromium.instance2056;chromium.instance2057;chromium.instance2058;chromium.instance2060;chromium.instance2080;chromium.instance2081;chromium.instance2082;chromium.instance2083;chromium.instance2085;chromium.instance2092;chromium.instance2093;chromium.instance2099;chromium.instance2100;chromium.instance2103;chromium.instance2106;chromium.instance2117;chromium.instance2121;chromium.instance2125;chromium.instance2129;chromium.instance2136;chromium.instance2139;chromium.instance2147;chromium.instance2150;chromium.instance2165;chromium.instance2171;chromium.instance2175;chromium.instance2179;chromium.instance2183;chromium.instance2184;chromium.instance2185;chromium.instance2187;chromium.instance2189;chromium.instance2190;chromium.instance2208;chromium.instance2216;chromium.instance2217;chromium.instance2226;chromium.instance2231;chromium.instance2233;chromium.instance2235;chromium.instance2257;chromium.instance2281;chromium.instance2286;chromium.instance2288;chromium.instance2315;chromium.instance2328;chromium.instance2334;chromium.instance2338;chromium.instance2340;chromium.instance23465;chromium.instance2347;chromium.instance2355;chromium.instance2377;chromium.instance2381;chromium.instance2414;chromium.instance2420;chromium.instance2422;chromium.instance2469;chromium.instance2482;chromium.instance2486;chromium.instance2496;chromium.instance2506;chromium.instance2515;chromium.instance2535;chromium.instance2552;chromium.instance2567;chromium.instance2572;chromium.instance25785;chromium.instance2586;chromium.instance2598;chromium.instance2610;chromium.instance26185;chromium.instance2656;chromium.instance2657;chromium.instance2666;chromium.instance2700;chromium.instance2706;chromium.instance2715;chromium.instance2735;chromium.instance2738;chromium.instance2765;chromium.instance2784;chromium.instance2790;chromium.instance28015;chromium.instance2849;chromium.instance2856;chromium.instance2875;chromium.instance2901;chromium.instance2908;chromium.instance29276;chromium.instance2933;chromium.instance2943;chromium.instance2989;chromium.instance3016;chromium.instance3019;chromium.instance3038;chromium.instance3102;chromium.instance3181;chromium.instance3221;chromium.instance3232;chromium.instance32456;chromium.instance3398;chromium.instance3467;chromium.instance3537;chromium.instance36308;chromium.instance3635;chromium.instance3660;chromium.instance3680;chromium.instance3738;chromium.instance3905;chromium.instance3975;chromium.instance3980;chromium.instance4154;chromium.instance4212;chromium.instance42364;chromium.instance4510;chromium.instance4550;chromium.instance459081;chromium.instance4623;chromium.instance4628;chromium.instance4689;chromium.instance5478;chromium.instance569217;chromium.instance5708;chromium.instance5849;chromium.instance5875;chromium.instance5882;chromium.instance59286;chromium.instance594456;chromium.instance6402;chromium.instance6436;chromium.instance6631;chromium.instance75250;chromium.instance8242;chromium.instance8243;chromium.instance8351;chromium.instance8359;chromium.instance8430;chromium.instance8601;chromium.instance8817;firefox.instance1600;Stremio.instance9218"/>
+      <property name="known-players" type="string" value="Brave;firefox;Firefox Navegador Web;Stremio;vlc"/>
+    </property>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-2" type="string" value="whiskermenu">
+      <property name="button-icon" type="string" value="/usr/share/icons/archicons/archlinux_icon2.png"/>
+      <property name="hover-switch-category" type="bool" value="true"/>
+      <property name="default-category" type="int" value="0"/>
+      <property name="favorites-in-recent" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="800"/>
+      <property name="menu-height" type="int" value="900"/>
+      <property name="menu-opacity" type="int" value="95"/>
+      <property name="command-switchuser" type="string" value="dm-tool switch-to-greeter"/>
+      <property name="favorites" type="array">
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="htop.desktop"/>
+        <value type="string" value="libreoffice-calc.desktop"/>
+        <value type="string" value="luckybackup.desktop"/>
+        <value type="string" value="org.keepassxc.KeePassXC.desktop"/>
+        <value type="string" value="hardinfo2.desktop"/>
+        <value type="string" value="org.gnome.DiskUtility.desktop"/>
+        <value type="string" value="xarchiver.desktop"/>
+        <value type="string" value="transmission-gtk.desktop"/>
+      </property>
+      <property name="view-mode" type="int" value="1"/>
+      <property name="position-commands-alternate" type="bool" value="true"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="show-command-lockscreen" type="bool" value="false"/>
+      <property name="show-command-shutdown" type="bool" value="true"/>
+      <property name="show-command-restart" type="bool" value="true"/>
+      <property name="show-command-logout" type="bool" value="false"/>
+      <property name="command-lockscreen" type="string" value="/usr/bin/xfce4-terminal"/>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="max-menu-items" type="uint" value="20"/>
+        <property name="inhibit" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-1" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-18" type="string" value="clock">
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-font" type="string" value="Sans 12"/>
+      <property name="timezone" type="string" value="Europe/Lisbon"/>
+      <property name="digital-date-font" type="string" value="Ubuntu Mono Bold 11"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="digital-time-format" type="string" value="%d %b, %H:%M"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-35" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+    </property>
+    <property name="plugin-12" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="clipman"/>
+        <value type="string" value="notas"/>
+        <value type="string" value="aplicação gestor de redes"/>
+        <value type="string" value="ligação à rede ethernet “wired connection 1” ativa"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="steam"/>
+        <value type="string" value="Stremio"/>
+      </property>
+      <property name="icon-size" type="int" value="0"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
+    </property>
+    <property name="notes" type="empty">
+      <property name="global" type="empty">
+        <property name="version" type="string" value="1.11.0"/>
+      </property>
+    </property>
+  </property>
+</channel>
