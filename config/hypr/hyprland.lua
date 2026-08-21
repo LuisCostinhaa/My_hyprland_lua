@@ -417,6 +417,13 @@ hl.window_rule({
 hl.window_rule({
     name  = "Float Windows",
     size  = "1150 700",
-    match = { class = "kitty|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|org.gnome.Calculator|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC" },
+    match = { class = "kitty|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC" },
+    float = true,
+})
+
+hl.window_rule({
+    name  = "Float",
+    size  = "400 700",
+    match = { class = "org.gnome.Calculator" },
     float = true,
 })

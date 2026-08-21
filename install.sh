@@ -20,7 +20,7 @@ yay -Sy
 yay -Sy --noconfirm --needed \
 base-devel amd-ucode xf86-video-amdgpu bash-completion mesa-utils mtools \
 bat dash lsd ntfs-3g gvfs 7zip gvfs-mtp opencl-amd xdg-user-dirs \
-polkit-gnome udiskie sg3_utils smartmontools efitools
+polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs
 
 ######### Hyprland #####
 yay -Sy --noconfirm --needed \
@@ -54,7 +54,7 @@ matugen-bin nwg-look colloid-icon-theme gtk-engine-murrine
 yay -Sy --noconfirm --needed \
 gnome-calculator gnome-disk-utility gnome-calendar gnome-clocks \
 xarchiver meld keepassxc ristretto parole mpv \
-alacritty kitty sublime-text-4 masterpdfeditor libreoffice-fresh-pt \
+alacritty kitty sublime-text-4 masterpdfeditor-free libreoffice-fresh-pt \
 fastfetch btop mission-center
 
 yay -Sy --noconfirm --needed \
