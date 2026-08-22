@@ -309,6 +309,7 @@ hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
 hl.bind("ALT + S", hl.dsp.exec_cmd("subl"))
 hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
+hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e opencode"))
 
 
 -- closeWindowBind:set_enabled(false)

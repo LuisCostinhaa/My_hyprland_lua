@@ -1,15 +1,6 @@
 {
 	"file_history":
 	[
-		"/home/vm/.config/hypr/hyprland.lua",
-		"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
-		"/run/media/vm/53920a9d-85cf-4295-bdd2-e973179a9556/necrofago/PKG/My-Projects/My_hyprland/config/hypr/Nova pasta/windows.conf",
-		"/home/vm/.config/scripts/power-menu.sh",
-		"/home/vm/.config/rofi/powermenu/powermenu.sh",
-		"/home/vm/.config/scripts/Logout.sh",
-		"/home/vm/.config/waybar/update_system.sh",
-		"/home/vm/.config/waybar/config.jsonc",
-		"/home/vm/.config/scripts/Reload-waybar.sh"
 	],
 	"folder_history":
 	[
@@ -17,7 +8,7 @@
 	"last_version": 4200,
 	"last_window_id": 35,
 	"log_indexing": false,
-	"next_update_check": 1787399016,
+	"next_update_check": 1787485416,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -107,6 +98,7 @@
 			},
 			"file_history":
 			[
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/hypr/hyprland.lua",
 				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/run/media/vm/53920a9d-85cf-4295-bdd2-e973179a9556/necrofago/PKG/My-Projects/My_hyprland/config/hypr/Nova pasta/windows.conf",
@@ -116,7 +108,6 @@
 				"/home/vm/.config/waybar/update_system.sh",
 				"/home/vm/.config/waybar/config.jsonc",
 				"/home/vm/.config/scripts/Reload-waybar.sh",
-				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/mimeapps.list",
 				"/home/vm/.config/user-dirs.dirs",
 				"/home/vm/.config/user-dirs.locale",
@@ -413,6 +404,7 @@
 			},
 			"file_history":
 			[
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/hypr/hyprland.lua",
 				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/run/media/vm/53920a9d-85cf-4295-bdd2-e973179a9556/necrofago/PKG/My-Projects/My_hyprland/config/hypr/Nova pasta/windows.conf",
@@ -422,7 +414,6 @@
 				"/home/vm/.config/waybar/update_system.sh",
 				"/home/vm/.config/waybar/config.jsonc",
 				"/home/vm/.config/scripts/Reload-waybar.sh",
-				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/mimeapps.list",
 				"/home/vm/.config/user-dirs.dirs",
 				"/home/vm/.config/user-dirs.locale",

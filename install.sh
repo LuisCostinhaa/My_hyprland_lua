@@ -53,16 +53,18 @@ matugen-bin nwg-look colloid-icon-theme gtk-engine-murrine
 ######### Apps #####
 yay -Sy --noconfirm --needed \
 gnome-calculator gnome-disk-utility gnome-calendar gnome-clocks \
-xarchiver meld keepassxc ristretto parole mpv \
-alacritty kitty sublime-text-4 masterpdfeditor-free libreoffice-fresh-pt \
-fastfetch btop mission-center
+xarchiver meld keepassxc alacritty kitty sublime-text-4  \
+fastfetch btop mission-center 
+
+#yay -Sy --noconfirm --needed \
+#opencode-git libreoffice-fresh-pt masterpdfeditor-free ristretto parole mpv \
+#darktable-git android-file-transfer
+
 
 yay -Sy --noconfirm --needed \
-darktable-git \
-brave librewolf \
-wl-color-picker \
+brave librewolf wl-color-picker \
 rofi waybar-git waypaper-git waybar-module-pacman-updates-git swaync awww \
-android-file-transfer
+
 
 ######### Display Manager #####
 yay -Sy --noconfirm --needed sddm sddm-theme-sugar-candy-git
