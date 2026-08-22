@@ -6,7 +6,7 @@
 	[
 	],
 	"last_version": 4200,
-	"last_window_id": 35,
+	"last_window_id": 36,
 	"log_indexing": false,
 	"next_update_check": 1787485416,
 	"settings":
@@ -98,9 +98,11 @@
 			},
 			"file_history":
 			[
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/teste2.sh",
+				"/home/vm/.zshrc",
 				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/hypr/hyprland.lua",
-				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/run/media/vm/53920a9d-85cf-4295-bdd2-e973179a9556/necrofago/PKG/My-Projects/My_hyprland/config/hypr/Nova pasta/windows.conf",
 				"/home/vm/.config/scripts/power-menu.sh",
 				"/home/vm/.config/rofi/powermenu/powermenu.sh",
@@ -223,9 +225,7 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/waypaper/hyprpaper.conf",
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-4.0/gtk-dark.css",
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-4.0/settings.ini",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-3.0/colors.css",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/matugen/templates/gtk-colors.css",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/matugen/templates/hyprland-colors.conf"
+				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-3.0/colors.css"
 			],
 			"find":
 			{
@@ -404,9 +404,11 @@
 			},
 			"file_history":
 			[
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/vm/PKG/My-Projects/My_hyprland_lua/teste2.sh",
+				"/home/vm/.zshrc",
 				"/home/vm/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/vm/.config/hypr/hyprland.lua",
-				"/home/vm/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/run/media/vm/53920a9d-85cf-4295-bdd2-e973179a9556/necrofago/PKG/My-Projects/My_hyprland/config/hypr/Nova pasta/windows.conf",
 				"/home/vm/.config/scripts/power-menu.sh",
 				"/home/vm/.config/rofi/powermenu/powermenu.sh",
@@ -529,9 +531,7 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/waypaper/hyprpaper.conf",
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-4.0/gtk-dark.css",
 				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-4.0/settings.ini",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-3.0/colors.css",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/matugen/templates/gtk-colors.css",
-				"/home/necrofago/PKG/My-Projects/My_hyprland/config/matugen/templates/hyprland-colors.conf"
+				"/home/necrofago/PKG/My-Projects/My_hyprland/config/gtk-3.0/colors.css"
 			],
 			"find":
 			{
@@ -649,15 +649,6 @@
 			"selected_group": 0,
 			"settings":
 			{
-				"last_automatic_layout":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				]
 			},
 			"show_minimap": true,
 			"show_open_files": true,
@@ -668,7 +659,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 34,
+			"window_id": 36,
 			"workspace_name": ""
 		}
 	],

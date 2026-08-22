@@ -1,119 +1,142 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-######### yay #####
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-sudo rm -r yay
+# Terminar o script imediatamente se algum comando falhar
+set -e
 
-######### Chaotic-Aur #####
+# Cores para o output
+VERDE='\033[0;32m'
+VERMELHO='\033[0;31m'
+SEM_COR='\033[0m'
+
+# Definir variável do host caso não esteja definida
+MYHOSTNM="${MYHOSTNM:-$USER}"
+SCRIPT_DIR="$(pwd)"
+
+echo -e "${VERDE}[1/16] Configurando chaves e repositórios (Chaotic-AUR)...${SEM_COR}"
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-sudo cp -r pacman.conf /etc
-yay -Sy
+sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-######### Base #####
-yay -Sy --noconfirm --needed \
-base-devel amd-ucode xf86-video-amdgpu bash-completion mesa-utils mtools \
-bat dash lsd ntfs-3g gvfs 7zip gvfs-mtp opencl-amd xdg-user-dirs \
-polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs
+# Correção do pacman.conf (Adicionar o Chaotic-AUR antes de atualizar)
+if [ -f pacman.conf ]; then
+    sudo cp pacman.conf /etc/pacman.conf
+fi
 
-######### Hyprland #####
-yay -Sy --noconfirm --needed \
-hyprland hyprpaper hyprland-qtutils qt5-wayland qt6-wayland \
-xdg-desktop-portal-hyprland hyprshot xdg-desktop-portal-gtk \
-qt5ct qt6ct kvantum kvantum-qt5
+echo -e "${VERDE}[2/16] Atualizando o sistema...${SEM_COR}"
+sudo pacman -Syu --noconfirm
 
-######### File Manager #####
-yay -Sy --noconfirm --needed \
-thunar thunar-archive-plugin thunar-volman tumbler
+echo -e "${VERDE}[3/16] Instalando dependências básicas e programas base...${SEM_COR}"
+sudo pacman -S --needed --noconfirm base-devel git
 
-######### Zsh #####
-yay -Sy --noconfirm --needed \
-zsh zsh-autosuggestions zsh-syntax-highlighting
+echo -e "${VERDE}[4/16] Instalando o yay (Gerenciador AUR)...${SEM_COR}"
+if ! command -v yay &> /dev/null; then
+    cd /tmp || exit
+    # Correção: Clonar do repositório correto do AUR, não do site principal
+    git clone https://aur.archlinux.org/yay.git
+    cd yay || exit
+    makepkg -si --noconfirm
+    cd "$SCRIPT_DIR" || exit
+    rm -rf /tmp/yay
+else
+    echo "Yay já está instalado."
+fi
 
-######### Fonts #####
-yay -Sy --noconfirm --needed ttf-jetbrains-mono-nerd 
-#ttf-joypixels ttf-fira-code ttf-font-awesome \
-#noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
+echo -e "${VERDE}[5/16] Instalando Base...${SEM_COR}"
+yay -S --needed --noconfirm \
+    amd-ucode xf86-video-amdgpu bash-completion mesa-utils mtools \
+    bat dash lsd ntfs-3g gvfs 7zip gvfs-mtp opencl-amd xdg-user-dirs \
+    polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs
 
-######### Audio #####
-yay -Sy --noconfirm --needed \
-pavucontrol-gtk3 pamixer pipewire pipewire-pulse
+echo -e "${VERDE}[6/16] Instalando Hyprland...${SEM_COR}"
+yay -S --needed --noconfirm \
+    hyprland hyprpaper qt5-wayland qt6-wayland \
+    xdg-desktop-portal-hyprland hyprshot xdg-desktop-portal-gtk \
+    qt5ct qt6ct kvantum kvantum-qt5
 
-######### Theming #####
-yay -Syu --noconfirm --needed \
-papirus-folders-git papirus-icon-theme adw-gtk-theme \
-matugen-bin nwg-look colloid-icon-theme gtk-engine-murrine
+echo -e "${VERDE}[7/16] Instalando File Manager...${SEM_COR}"
+yay -S --needed --noconfirm \
+    thunar thunar-archive-plugin thunar-volman tumbler
 
-######### Apps #####
-yay -Sy --noconfirm --needed \
-gnome-calculator gnome-disk-utility gnome-calendar gnome-clocks \
-xarchiver meld keepassxc alacritty kitty sublime-text-4  \
-fastfetch btop mission-center 
+echo -e "${VERDE}[8/16] Instalando Zsh...${SEM_COR}"
+yay -S --needed --noconfirm \
+    zsh zsh-autosuggestions zsh-syntax-highlighting
 
-#yay -Sy --noconfirm --needed \
-#opencode-git libreoffice-fresh-pt masterpdfeditor-free ristretto parole mpv \
-#darktable-git android-file-transfer
+echo -e "${VERDE}[9/16] Instalando Fonts...${SEM_COR}"
+yay -S --needed --noconfirm ttf-jetbrains-mono-nerd
 
+echo -e "${VERDE}[10/16] Instalando Audio...${SEM_COR}"
+yay -S --needed --noconfirm \
+    pavucontrol-gtk3 pamixer pipewire pipewire-pulse
 
-yay -Sy --noconfirm --needed \
-brave librewolf wl-color-picker \
-rofi waybar-git waypaper-git waybar-module-pacman-updates-git swaync awww \
+echo -e "${VERDE}[11/16] Instalando Theming...${SEM_COR}"
+yay -S --needed --noconfirm \
+    papirus-folders-git papirus-icon-theme adw-gtk-theme \
+    matugen-bin nwg-look colloid-icon-theme gtk-engine-murrine
 
+echo -e "${VERDE}[12/16] Instalando Apps (Parte 1)...${SEM_COR}"
+yay -S --needed --noconfirm \
+    gnome-calculator gnome-disk-utility gnome-calendar gnome-clocks \
+    xarchiver meld keepassxc alacritty kitty sublime-text-4 \
+    fastfetch btop mission-center
 
-######### Display Manager #####
-yay -Sy --noconfirm --needed sddm sddm-theme-sugar-candy-git
+echo -e "${VERDE}[13/16] Instalando Apps (Parte 2)...${SEM_COR}"
+yay -S --needed --noconfirm \
+    brave librewolf wl-color-picker \
+    rofi waybar-git waypaper-git waybar-module-pacman-updates-git swaync awww
+
+echo -e "${VERDE}[14/16] Instalando Display Manager...${SEM_COR}"
+yay -S --needed --noconfirm sddm sddm-theme-sugar-candy-git
 sudo systemctl enable sddm.service
 
-######### Firewall #####
-yay -Sy --noconfirm --needed ufw
-sudo ufw enable
+echo -e "${VERDE}[15/16] Instalando Firewall...${SEM_COR}"
+yay -S --needed --noconfirm ufw
 sudo systemctl enable ufw.service
+sudo systemctl start ufw.service
+sudo ufw --force enable
 
-######### Setings #####
+echo -e "${VERDE}[16/16] Movendo arquivos de configuração e aplicando permissões...${SEM_COR}"
+# Garantir que as pastas locais existem antes de atualizar
 xdg-user-dirs-update
-cd sddm
-sudo cp -r ./* /usr/share/sddm/themes/Sugar-Candy
-cd ..
-sudo cp -r backgrounds ~/Imagens/
-#cd backgrounds
-#sudo mkdir /usr/share/backgrounds/
-#sudo cp -r grub.png /usr/share/backgrounds/
-#cd ..
-sudo cp -r fonts /usr/local/share
-sudo cp -r sddm.conf /etc/
-sudo cp -r grub /etc/default
-sudo cp -r makepkg.conf /etc
-cd config || exit
-sudo cp -r ./* ~/.config
-#sudo cp -r /usr/share/themes/adw-gtk3-dark/gtk-4.0 ~/.config
-cd ..
-sudo cp .bashrc ~
-sudo cp .zshrc ~
-sudo cp .zshenv ~
 
-######### Chown #####
-cd || exit
+# Instalação segura do tema SDDM
+if [ -d "sddm" ]; then
+    sudo mkdir -p /usr/share/sddm/themes/Sugar-Candy
+    sudo cp -r sddm/* /usr/share/sddm/themes/Sugar-Candy/
+fi
+
+# Cópia segura de recursos globais
+[ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
+[ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
+[ -f "sddm.conf" ] && sudo cp sddm.conf /etc/
+[ -f "grub" ] && sudo cp grub /etc/default/grub
+[ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
+
+# Cópia de dotfiles (.config e shell)
+if [ -d "config" ]; then
+    mkdir -p ~/.config
+    cp -r config/* ~/.config/
+fi
+
+[ -f ".bashrc" ] && cp .bashrc ~
+[ -f ".zshrc" ] && cp .zshrc ~
+[ -f ".zshenv" ] && cp .zshenv ~
+
+# Organização da Home do usuário
+cd ~
 mkdir -p ISOs PKG/My-Projects
-sudo mv My_hyprland_lua PKG/My-Projects
-sudo chown -R "${USER}":"${USER}" .bashrc
-sudo chown -R "${USER}":"${USER}" .zshrc
-sudo chown -R "${USER}":"${USER}" .config
+if [ -d "My_hyprland_lua" ]; then
+    mv My_hyprland_lua PKG/My-Projects/
+fi
 
-########## Update Grub #####
+# Ajuste definitivo de permissões na Home do utilizador (remover sudo onde não deve)
+chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config"
+
+echo -e "${VERDE}Atualizando o Grub...${SEM_COR}"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-####################	ZSH		####################
+echo -e "${VERDE}Configurando o ZSH como shell padrão...${SEM_COR}"
 sudo chsh -s /bin/zsh root
-chsh -s /bin/zsh ${MYHOSTNM}
+sudo chsh -s /bin/zsh "${MYHOSTNM}"
 
-####################	Desempenho	####################
-#yay -Sy --noconfirm --needed auto-cpufreq 
-
-#sudo auto-cpufreq --install
-#sudo auto-cpufreq --turbo auto
+echo -e "${VERDE}Configuração concluída com sucesso!${SEM_COR}"
