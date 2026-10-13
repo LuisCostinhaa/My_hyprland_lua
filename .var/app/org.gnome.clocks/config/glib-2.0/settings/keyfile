@@ -1,0 +1,7 @@
+[org/gnome/clocks]
+world-clocks=[{'location': <(uint32 2, <('Lisbon', 'LPPT', true, [(0.6766059791742326, -0.15940673253105125)], [(0.67573331454823549, -0.15940673253105125)])>)>}]
+
+[org/gnome/clocks/state/window]
+size=(0, 0)
+panel-id='world'
+maximized=true

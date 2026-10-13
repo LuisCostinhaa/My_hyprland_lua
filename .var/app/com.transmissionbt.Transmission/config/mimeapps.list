@@ -1,0 +1,5 @@
+[Default Applications]
+x-scheme-handler/magnet=userapp-transmission-gtk-48QTW3.desktop
+
+[Added Associations]
+x-scheme-handler/magnet=userapp-transmission-gtk-48QTW3.desktop;

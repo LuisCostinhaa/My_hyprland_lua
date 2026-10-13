@@ -1,0 +1,4 @@
+[org/gnome/calendar]
+window-size=(768, 600)
+active-view='month'
+window-maximized=true

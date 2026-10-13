@@ -1,0 +1,20 @@
+	DARKTABlE
+curl -fsSL https://raw.githubusercontent.com/darktable-org/darktable/HEAD/tools/ai/install-ort-gpu.sh | bash
+
+##################################
+
+	archlinux kernel: nvidia-gpu 0000:10:00.3: i2c timeout error e0000000
+
+1 - Crie um ficheiro de configuração para o modprobe:
+	sudo nano /etc/modprobe.d/blacklist_i2c-nvidia-gpu.conf
+
+2 - Adicione a seguinte linha ao ficheiro:
+	blacklist i2c_nvidia_gpu
+
+3 - Recrie a imagem initramfs do Arch Linux para aplicar a alteração logo no início do boot:
+	sudo mkinitcpio -P
+
+############################################################################
+		flatpak Dark Mode
+
+flatpak override --user --env=GTK_THEME=Adwaita:dark

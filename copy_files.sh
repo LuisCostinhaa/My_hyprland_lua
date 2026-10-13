@@ -9,6 +9,7 @@ cp -r ~/.zshrc ~/PKG/My-Projects/My_hyprland_lua/
 cp -r ~/.zshenv ~/PKG/My-Projects/My_hyprland_lua/
 cp -r ~/.bashrc ~/PKG/My-Projects/My_hyprland_lua/
 cp -r ~/Imagens/backgrounds ~/PKG/My-Projects/My_hyprland_lua/
+cp -r ~/.var ~/PKG/My-Projects/My_hyprland_lua/
 
 # 3. Copiar ficheiros do sistema (com sudo, mas corrigindo o dono logo de seguida)
 sudo cp -r /usr/local/share/fonts ~/PKG/My-Projects/My_hyprland_lua/

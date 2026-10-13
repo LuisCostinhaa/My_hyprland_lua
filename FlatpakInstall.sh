@@ -14,13 +14,10 @@ APPLICATIONS=(
     "org.gnome.Loupe"
     "com.sublimehq.SublimeText"
     "com.transmissionbt.Transmission"
-    "io.github.pwr_solaar.solaar"
-    "io.gitlab.librewolf-community"
     "io.missioncenter.MissionCenter"
     "org.gnome.Calculator"
     "org.gnome.Calendar"
     "org.gnome.clocks"
-    "org.keepassxc.KeePassXC"
     "io.bassi.Amberol"
     "org.pulseaudio.pavucontrol"
 )

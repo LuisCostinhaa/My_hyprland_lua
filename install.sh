@@ -47,7 +47,7 @@ yay -S --needed --noconfirm \
     bash-completion mesa-utils mtools linux-headers \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
-    cuda cudnn opencl-nvidia nvidia-open nvidia-settings nvidia-utils
+    cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
     #amd-ucode xf86-video-amdgpu opencl-amd \
     #nvidia-580xx-dkms nvidia-580xx-utils nvidia-580xx-settings opencl-nvidia-580xx
 
@@ -80,7 +80,7 @@ yay -S --needed --noconfirm \
 echo -e "${VERDE}[12/16] Instalando Apps (Parte 1)...${SEM_COR}"
 yay -S --needed --noconfirm \
     gnome-disk-utility xarchiver meld alacritty kitty \
-    fastfetch btop
+    fastfetch btop librewolf keepassxc solaar
 
 echo -e "${VERDE}[13/16] Instalando Apps (Parte 2)...${SEM_COR}"
 yay -S --needed --noconfirm \
@@ -113,6 +113,7 @@ fi
 # Cópia segura de recursos globais
 [ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
 [ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
+[ -d ".var" ] && sudo mkdir -p ~/.var && sudo cp -r .var/* ~/.var
 [ -f "sddm.conf" ] && sudo cp sddm.conf /etc/
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
 [ -f "grub" ] && sudo cp grub /etc/default/
