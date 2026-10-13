@@ -276,7 +276,7 @@ export EDITOR="subl"
 #LC_CTYPE=pt_PT.UTF-8
 #LC_ALL=pt_PT.UTF-8
 #
-alias cat="bat"
+#alias cat="bat"
 alias ccache="yay -Scc"
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias grep='grep --color=auto'

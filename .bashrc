@@ -22,7 +22,7 @@ export EDITOR="subl"
 source /usr/share/blesh/ble.sh
 #
 #
-alias cat="bat"
+#alias cat="bat"
 alias ccache="yay -Scc"
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias grep='grep --color=auto'

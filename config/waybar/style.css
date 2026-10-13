@@ -13,7 +13,7 @@
     color:          @primary;
     font-family:    "Google Sans Flex Regular";
     font-weight:    500;
-    font-size:      15px;
+    font-size:      14px;
 }
 
 /* Each module */
@@ -21,12 +21,10 @@
 #workspaces,
 #window,
 #cpu,
-#memory,
 #network,
 #custom-launcher,
 #pulseaudio,
-#custom-updates,
-#temperature {
+#custom-updates{
     background: @background;
     padding: 0;
     margin-top: 3px;
@@ -48,31 +46,11 @@
     color: red;
 }
 
-#memory {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#memory.warning {
-    color: orange;
-}
-
-#memory.critical {
-    color: red;
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
 #network.disconnected {
     color: orange;
 }
 
 #pulseaudio.muted {
-    color: red;
-}
-
-#temperature.critical {
     color: red;
 }
 

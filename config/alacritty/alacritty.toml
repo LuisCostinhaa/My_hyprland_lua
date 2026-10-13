@@ -4,10 +4,17 @@ general.import = ["colors.toml"]
 TERM = "xterm-256color"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Propo", style = "Regular" }
-bold = { family = "JetBrainsMono Nerd Font Propo", style = "Bold" }
-italic = { family = "JetBrainsMono Nerd Font Propo", style = "Italic" }
-size = 12
+normal.family = "JetBrainsMono Nerd Font Propo"
+normal.style = "Regular"
+size = 12.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Italic"
 
 [window]
 padding.x = 14
@@ -21,6 +28,10 @@ general = "Alacritty"
 [scrolling]
 history = 10000
 multiplier = 3
+
+[colors]
+#transparent_background_colors = true
+draw_bold_text_with_bright_colors = true
 
 [keyboard]
 bindings = [

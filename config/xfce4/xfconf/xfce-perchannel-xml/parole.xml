@@ -6,13 +6,13 @@
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="true"/>
-    <property name="width" type="int" value="1272"/>
-    <property name="height" type="int" value="693"/>
+    <property name="width" type="int" value="638"/>
+    <property name="height" type="int" value="697"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="100"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/necrofago/Vídeos"/>
+    <property name="last-used-media" type="string" value="/home/necrofago/Música/Rock"/>
   </property>
 </channel>

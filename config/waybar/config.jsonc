@@ -14,9 +14,7 @@
     "modules-right": [
         "network",
         "custom/updates",
-    //    "memory",
         "cpu",
-        "temperature",
         "pulseaudio",
         "clock#date",
         "clock#time"
@@ -31,14 +29,14 @@
         "interval": 60,
         "format": "   {:%H:%M} ",
         "tooltip": false,
-        "on-click": "gnome-clocks"
+        "on-click": "org.gnome.clocks"
     },
 
     "clock#date": {
       "interval": 339,
       "format": "   {:%e %b %Y} ", // Icon: calendar-alt
       "tooltip-format": "{:%e %B %Y}",
-      "on-click": "gnome-calendar"
+      "on-click": "org.gnome.Calendar"
     },
 
     "cpu": {
@@ -50,12 +48,6 @@
         },
         "on-click": "kitty -e sh -c btop "
     },
-
-    //"memory": {
-    //    "interval": 21,
-    //    "format": " {used:0.1f}G/{total:0.1f}G   ",
-    //    "on-click": "gnome-disks"
-    //},
 
     "network": {
         "interface": "enp34s0",
@@ -106,7 +98,7 @@
         "format-icons": {
             "default": [ " ", " "]
         },
-        "on-click": "pavucontrol",
+        "on-click": "org.pulseaudio.pavucontrol",
         "on-click-right": "pamixer -t"
     },
 
@@ -125,17 +117,5 @@
         "format": "   ",
         "on-click": "pkill rofi || .config/rofi/launchers/launcher.sh",
         "tooltip": false
-    },
-
-     "temperature": {
-         "thermal-zone": 2,
-         "interval": 27,
-         "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input",
-         "critical-threshold": 60,
-         "format-critical": "  {temperatureC}°C ",
-         "format": "  {temperatureC}°C ",
-         "on-click": "missioncenter"
-            },
-      "tooltip": true
     },
 }

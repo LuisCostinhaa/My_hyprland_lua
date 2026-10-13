@@ -62,6 +62,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd(" /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
   hl.exec_cmd("awww-daemon & swaync & udiskie & waybar")
   hl.exec_cmd("awww restore")
+ -- hl.exec_cmd("quickshell")
   --hl.exec_cmd("waybar & hyprpaper --restore & swaync & udiskie") -- Execute waybar, hyprpaper, firefox
 end)
 
@@ -289,27 +290,33 @@ hl.device({
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
 hl.bind("ALT + return", hl.dsp.exec_cmd(terminal))
-local closeWindowBind = hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + CTRL + p", hl.dsp.exec_cmd(power))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd(appkill))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ReloadWaybar))
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd(ReloadColor))
+hl.bind(mainMod .. " + SHIFT  + P",hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())   
 
-
 hl.bind("ALT + T", hl.dsp.exec_cmd(fileManager))
-hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
-hl.bind("ALT + L", hl.dsp.exec_cmd("librewolf"))
+hl.bind("ALT + L", hl.dsp.exec_cmd("io.gitlab.librewolf-community"))
 hl.bind("ALT + B", hl.dsp.exec_cmd("brave"))
 hl.bind("ALT + D", hl.dsp.exec_cmd("darktable"))
 hl.bind("ALT + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
-hl.bind("ALT + S", hl.dsp.exec_cmd("subl"))
-hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
-hl.bind("XF86Calculator", hl.dsp.exec_cmd("gnome-calculator"))
+hl.bind("ALT + S", hl.dsp.exec_cmd("com.sublimehq.SublimeText"))
+hl.bind("ALT + K", hl.dsp.exec_cmd("org.keepassxc.KeePassXC"))
+hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e opencode"))
+hl.bind("Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m window -o ~/Imagens/Screenshot"))
+hl.bind("XF86Tools", hl.dsp.exec_cmd("io.bassi.Amberol"))
+hl.bind("XF86Search", hl.dsp.exec_cmd(menu))
+hl.bind("XF86Mail", hl.dsp.exec_cmd("io.gitlab.librewolf-community"))
+hl.bind("XF86HomePage", hl.dsp.exec_cmd("brave"))
+hl.bind("XF86Calculator", hl.dsp.exec_cmd("org.gnome.Calculator"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m region -o ~/Imagens/Screenshot"))
 
 
 -- closeWindowBind:set_enabled(false)
@@ -335,8 +342,8 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+--hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
+--hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
@@ -404,7 +411,7 @@ hl.window_rule({
 --     match = { namespace = "^my-overlay$" },
 --     no_anim = true,
 -- })
--- overlayLayerRule:set_enabled(false)
+-- overlayLayerRule:set_enabled(false) ------### hyprctl clients ###-------
 
 -- Hyprland-run windowrule
 hl.window_rule({
@@ -418,7 +425,7 @@ hl.window_rule({
 hl.window_rule({
     name  = "Float Windows",
     size  = "1150 700",
-    match = { class = "kitty|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC" },
+    match = { class = "kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
     float = true,
 })
 

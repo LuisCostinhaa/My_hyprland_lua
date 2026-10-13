@@ -44,46 +44,51 @@ fi
 
 echo -e "${VERDE}[5/16] Instalando Base...${SEM_COR}"
 yay -S --needed --noconfirm \
-    amd-ucode xf86-video-amdgpu bash-completion mesa-utils mtools \
-    bat dash lsd ntfs-3g gvfs 7zip gvfs-mtp opencl-amd xdg-user-dirs \
-    polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs
+    bash-completion mesa-utils mtools linux-headers \
+    dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
+    polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
+    cuda cudnn opencl-nvidia nvidia-open nvidia-settings nvidia-utils
+    #amd-ucode xf86-video-amdgpu opencl-amd \
+    #nvidia-580xx-dkms nvidia-580xx-utils nvidia-580xx-settings opencl-nvidia-580xx
 
 echo -e "${VERDE}[6/16] Instalando Hyprland...${SEM_COR}"
 yay -S --needed --noconfirm \
     hyprland hyprpaper qt5-wayland qt6-wayland \
     xdg-desktop-portal-hyprland hyprshot xdg-desktop-portal-gtk \
-    qt5ct qt6ct kvantum kvantum-qt5
+    qt5ct qt6ct kvantum kvantum-qt5 hyprpicker fcitx5-gtk fcitx5-qt
 
 echo -e "${VERDE}[7/16] Instalando File Manager...${SEM_COR}"
 yay -S --needed --noconfirm \
-    thunar thunar-archive-plugin thunar-volman tumbler
+    thunar thunar-archive-plugin thunar-volman tumbler ffmpegthumbnailer 
 
 echo -e "${VERDE}[8/16] Instalando Zsh...${SEM_COR}"
 yay -S --needed --noconfirm \
-    zsh zsh-autosuggestions zsh-syntax-highlighting
+    zsh zsh-autosuggestions zsh-syntax-highlighting 
 
 echo -e "${VERDE}[9/16] Instalando Fonts...${SEM_COR}"
 yay -S --needed --noconfirm ttf-jetbrains-mono-nerd
 
 echo -e "${VERDE}[10/16] Instalando Audio...${SEM_COR}"
 yay -S --needed --noconfirm \
-    pavucontrol-gtk3 pamixer pipewire pipewire-pulse
+    pamixer pipewire pipewire-pulse alsa-utils
 
 echo -e "${VERDE}[11/16] Instalando Theming...${SEM_COR}"
 yay -S --needed --noconfirm \
-    papirus-folders-git papirus-icon-theme adw-gtk-theme \
-    matugen-bin nwg-look colloid-icon-theme gtk-engine-murrine
+    adw-gtk-theme matugen-bin nwg-look gtk-engine-murrine yaru-icon-theme \
+    #papirus-folders-git papirus-icon-theme colloid-icon-theme-git
 
 echo -e "${VERDE}[12/16] Instalando Apps (Parte 1)...${SEM_COR}"
 yay -S --needed --noconfirm \
-    gnome-calculator gnome-disk-utility gnome-calendar gnome-clocks \
-    xarchiver meld keepassxc alacritty kitty sublime-text-4 \
-    fastfetch btop mission-center
+    gnome-disk-utility xarchiver meld alacritty kitty \
+    fastfetch btop
 
 echo -e "${VERDE}[13/16] Instalando Apps (Parte 2)...${SEM_COR}"
 yay -S --needed --noconfirm \
-    brave librewolf wl-color-picker \
-    rofi waybar-git waypaper-git waybar-module-pacman-updates-git swaync awww
+    brave \
+    rofi waybar-git waypaper-git waybar-module-pacman-updates-git awww \
+    darktable-git android-file-transfer flatpak
+
+  # gtk-engine-murrine 
 
 echo -e "${VERDE}[14/16] Instalando Display Manager...${SEM_COR}"
 yay -S --needed --noconfirm sddm sddm-theme-sugar-candy-git
@@ -109,8 +114,8 @@ fi
 [ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
 [ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
 [ -f "sddm.conf" ] && sudo cp sddm.conf /etc/
-[ -f "grub" ] && sudo cp grub /etc/default/grub
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
+[ -f "grub" ] && sudo cp grub /etc/default/
 
 # Cópia de dotfiles (.config e shell)
 if [ -d "config" ]; then

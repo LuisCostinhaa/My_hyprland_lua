@@ -14,10 +14,10 @@ arguments = ["img", "--transition-type", "center"]
 input_path = '~/.config/matugen/templates/hyprland-colors.lua'
 output_path = '~/.config/hypr/colors.lua'
 
-#[templates.kitty]
-#input_path = '~/.config/matugen/templates/kitty-colors.conf'
-#output_path = '~/.config/kitty/colors.conf'
-#post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = "pkill -SIGUSR1 kitty"
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
@@ -47,4 +47,13 @@ output_path = '~/.config/gtk-4.0/colors.css'
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
-output_path = '~/.config/btop/themes/matugen.theme'
+output_path = '~/.config/btop/themes/color.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+[templates.qt5ct]
+input_path = '~/.config/matugen/templates/qtct-colors.conf'
+output_path = '~/.local/share/color-schemes/color.colors'
+
+[templates.qt6ct]
+input_path = '~/.config/matugen/templates/qtct-colors.conf'
+output_path = '~/.local/share/color-schemes/color.colors'
