@@ -136,7 +136,7 @@ if [ -d "My_hyprland_lua" ]; then
 fi
 
 # Ajuste definitivo de permissões na Home do utilizador (remover sudo onde não deve)
-chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config"
+chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config" "$HOME/.var"
 
 echo -e "${VERDE}Atualizando o Grub...${SEM_COR}"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
