@@ -59,3 +59,5 @@ alias cpu="sudo auto-cpufreq --live"
 alias syu="yay -Syu"
 alias r="reboot"
 alias y="yazi"
+
+. "$HOME/.local/bin/env"

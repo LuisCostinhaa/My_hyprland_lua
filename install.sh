@@ -84,7 +84,7 @@ yay -S --needed --noconfirm \
 
 echo -e "${VERDE}[13/16] Instalando Apps (Parte 2)...${SEM_COR}"
 yay -S --needed --noconfirm \
-    brave \
+    brave hyprmod \
     rofi waybar-git waypaper-git waybar-module-pacman-updates-git awww \
     darktable-git android-file-transfer flatpak
 

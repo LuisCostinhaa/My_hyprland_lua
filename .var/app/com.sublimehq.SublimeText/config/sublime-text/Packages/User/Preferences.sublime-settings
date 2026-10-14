@@ -1,5 +1,10 @@
 {
 	"font_face": "JetBrainsMono Nerd Font Propo",
 	"font_size": 13,
-	"theme": "Default Dark.sublime-theme",
+	"theme": "Gravity One.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
 }

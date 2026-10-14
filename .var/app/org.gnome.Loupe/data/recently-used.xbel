@@ -13,4 +13,14 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/necrofago/Transfer%C3%AAncias/Azul-Delta.webp" added="2026-10-14T12:55:09.408068Z" modified="2026-10-14T12:55:09.408070Z" visited="2026-10-14T12:55:09.408068Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/webp"/>
+        <bookmark:applications>
+          <bookmark:application name="loupe" exec="&apos;loupe %u&apos;" modified="2026-10-14T12:55:09.408069Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

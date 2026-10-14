@@ -121,7 +121,7 @@ local colors = require("colors")
 hl.config({
     general = {
         gaps_in  = 3,
-        gaps_out = 4,
+        gaps_out = 3,
 
         border_size = 1,
 
@@ -140,7 +140,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 7,
+        rounding       = 5,
         rounding_power = 2,
 
         -- Change transparency of focused and unfocused windows
@@ -309,7 +309,7 @@ hl.bind("ALT + D", hl.dsp.exec_cmd("darktable"))
 hl.bind("ALT + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
 hl.bind("ALT + S", hl.dsp.exec_cmd("com.sublimehq.SublimeText"))
-hl.bind("ALT + K", hl.dsp.exec_cmd("org.keepassxc.KeePassXC"))
+hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e opencode"))
 hl.bind("Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m window -o ~/Imagens/Screenshot"))
@@ -427,7 +427,7 @@ hl.window_rule({
 hl.window_rule({
     name  = "Float Windows",
     size  = "1150 700",
-    match = { class = "kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
+    match = { class = "nvidia-settings|solaar|com.transmissionbt.Transmission._66307_11535094|kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
     float = true,
 })
 
@@ -437,3 +437,8 @@ hl.window_rule({
     match = { class = "org.gnome.Calculator" },
     float = true,
 })
+
+
+
+-- HyprMod managed settings
+require("hyprland-gui")
