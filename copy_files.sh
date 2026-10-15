@@ -1,27 +1,64 @@
 #!/usr/bin/env bash
 
-# 1. Criar a estrutura de pastas necessária
-mkdir -p ~/PKG/My-Projects/My_hyprland_lua/config
-mkdir -p ~/PKG/My-Projects/My_hyprland_lua/sddm/Backgrounds
+# Sair imediatamente se algum comando falhar
+set -e
 
-# 2. Copiar ficheiros de configuração do utilizador local
-cp -r ~/.zshrc ~/PKG/My-Projects/My_hyprland_lua/
-cp -r ~/.zshenv ~/PKG/My-Projects/My_hyprland_lua/
-cp -r ~/.bashrc ~/PKG/My-Projects/My_hyprland_lua/
-cp -r ~/Imagens/backgrounds ~/PKG/My-Projects/My_hyprland_lua/
-cp -r ~/.var ~/PKG/My-Projects/My_hyprland_lua/
+# Definição do diretório de destino
+DEST_DIR="$HOME/PKG/My-Projects/My_hyprland_lua"
 
-# 3. Copiar ficheiros do sistema (com sudo, mas corrigindo o dono logo de seguida)
-sudo cp -r /usr/local/share/fonts ~/PKG/My-Projects/My_hyprland_lua/
-sudo cp -r /etc/sddm.conf ~/PKG/My-Projects/My_hyprland_lua/
-sudo cp -r /etc/pacman.conf ~/PKG/My-Projects/My_hyprland_lua/
-sudo cp -r /etc/makepkg.conf ~/PKG/My-Projects/My_hyprland_lua/
-sudo cp -r /etc/default/grub ~/PKG/My-Projects/My_hyprland_lua/
-sudo cp -r /usr/share/sddm/themes/Sugar-Candy/Backgrounds/. ~/PKG/My-Projects/My_hyprland_lua/sddm/Backgrounds/
-sudo cp -r /usr/share/sddm/themes/Sugar-Candy/theme.conf ~/PKG/My-Projects/My_hyprland_lua/sddm/
+echo "=== A iniciar o backup de configurações ==="
 
-# 4. Copiar TODO o conteúdo de ~/.config (incluindo pastas ocultas de forma segura)
-cp -r ~/.config/. ~/PKG/My-Projects/My_hyprland_lua/config/
+# 1. Criar a estrutura inicial de pastas necessária
+mkdir -p "$DEST_DIR/config"
+mkdir -p "$DEST_DIR/sddm/Backgrounds"
 
-# 5. Corrigir permissões de forma RECURSIVA (-R) usando a variável automática do utilizador atual
-sudo chown -R "$USER":"$USER" ~/PKG/My-Projects/My_hyprland_lua
+# 2. Copiar ficheiros e pastas de configuração do utilizador local
+echo "-> A copiar ficheiros locais..."
+for item in ".zshrc" ".zshenv" ".bashrc" "Imagens/backgrounds" ".var"; do
+    if [ -e "$HOME/$item" ]; then
+        cp -r "$HOME/$item" "$DEST_DIR/"
+    else
+        echo "Aviso: $HOME/$item não encontrado. Ignorado."
+    fi
+done
+
+# 3. Copiar ficheiros do sistema (com sudo)
+echo "-> A copiar ficheiros do sistema..."
+sudo cp -r /usr/local/share/fonts "$DEST_DIR/" 2>/dev/null || echo "Aviso: fontes não encontradas."
+sudo cp -r /etc/sddm.conf /etc/pacman.conf /etc/makepkg.conf /etc/default/grub "$DEST_DIR/" 2>/dev/null || true
+
+# Copiar ficheiros do tema SDDM se existirem
+if [ -d "/usr/share/sddm/themes/Sugar-Candy" ]; then
+    sudo cp -r /usr/share/sddm/themes/Sugar-Candy/Backgrounds/. "$DEST_DIR/sddm/Backgrounds/"
+    sudo cp -r /usr/share/sddm/themes/Sugar-Candy/theme.conf "$DEST_DIR/sddm/"
+fi
+
+# 4. Copiar conteúdo selecionado de ~/.config
+echo "-> A copiar configurações do ~/.config..."
+
+# Lista de pastas dentro de ~/.config
+config_folders=(
+    alacritty btop fastfetch gtk-3.0 hypr keepassxc kitty matugen 
+    nwg-look pulse qt5ct qt6ct rofi scripts Thunar waybar xfce4 
+    xsettingsd waypaper
+)
+
+for folder in "${config_folders[@]}"; do
+    if [ -d "$HOME/.config/$folder" ]; then
+        mkdir -p "$DEST_DIR/config/$folder"
+        cp -r "$HOME/.config/$folder/." "$DEST_DIR/config/$folder/"
+    fi
+done
+
+# Copiar ficheiros soltos do ~/.config
+for file in "pavucontrol.ini" "user-dirs.locale"; do
+    if [ -f "$HOME/.config/$file" ]; then
+        cp "$HOME/.config/$file" "$DEST_DIR/config/"
+    fi
+done
+
+# 5. Corrigir permissões de forma RECURSIVA de volta para o teu utilizador
+echo "-> A corrigir permissões..."
+sudo chown -R "$USER":"$USER" "$DEST_DIR"
+
+echo "=== Backup concluído com sucesso! ==="
