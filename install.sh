@@ -44,7 +44,7 @@ fi
 
 echo -e "${VERDE}[5/16] Instalando Base...${SEM_COR}"
 yay -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-headers \
+    bash-completion mesa-utils mtools linux-headers nano \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
@@ -136,7 +136,7 @@ if [ -d "My_hyprland_lua" ]; then
 fi
 
 # Ajuste definitivo de permissões na Home do utilizador (remover sudo onde não deve)
-chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config" "$HOME/.var"
+sudo chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config" "$HOME/.var"
 
 echo -e "${VERDE}Atualizando o Grub...${SEM_COR}"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
