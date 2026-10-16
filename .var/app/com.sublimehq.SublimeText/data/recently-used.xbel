@@ -573,12 +573,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/config/waybar/style.css" added="2026-10-14T19:38:28.190637Z" modified="2026-10-14T19:38:28.190640Z" visited="2026-10-14T19:38:28.190638Z">
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/config/waybar/style.css" added="2026-10-14T19:38:28.190637Z" modified="2026-10-16T10:39:33.058375Z" visited="2026-10-14T19:38:28.190638Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/css"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-14T19:38:28.190638Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:39:33.058374Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -729,6 +729,26 @@
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
           <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:31:54.074753Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/user-dirs.dirs" added="2026-10-16T10:42:07.542102Z" modified="2026-10-16T10:42:07.542104Z" visited="2026-10-16T10:42:07.542102Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-zerosize"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:42:07.542103Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/glib-2.0/settings/keyfile" added="2026-10-16T10:42:14.110688Z" modified="2026-10-16T10:42:14.110691Z" visited="2026-10-16T10:42:14.110689Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:42:14.110690Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
