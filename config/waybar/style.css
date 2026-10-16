@@ -10,8 +10,8 @@
 /* The whole bar */
 #waybar {
     background:     transparent;
-    color:          @primary;
-    font-family:    "Google Sans Flex Regular";
+    color:          @primary_fixed;
+    font-family:    JetBrainsMono Nerd Font Propo;
     font-weight:    500;
     font-size:      14px;
 }
@@ -21,9 +21,10 @@
 #workspaces,
 #window,
 #cpu,
+#memory,
 #network,
 #custom-launcher,
-#pulseaudio,
+#volume,
 #custom-updates{
     background: @background;
     padding: 0;
@@ -31,7 +32,8 @@
     margin-left: 6px;
     margin-right: 6px;
     border-radius: 6px;
-    border: 2px solid @inverse_primary;
+    border: 2px solid;
+    border-color: @inverse_primary;
 }
 
 /* -----------------------------------------------------------------------------
@@ -39,24 +41,24 @@
  * -------------------------------------------------------------------------- */
 
 #cpu.warning {
-    color: orange;
+    color: @error_container;
 }
 
 #cpu.critical {
-    color: red;
+    color: @error_container;
 }
 
 #network.disconnected {
-    color: orange;
+    color: @error_container;
 }
 
-#pulseaudio.muted {
-    color: red;
+#network.ethernet {
+    color: @on_tertiary_container;
 }
 
 #workspaces button {
     padding: 2px 5px;
-    color: @tertiary;
+    color: @on_tertiary_container;
 }
 
 #workspaces button.empty {
@@ -66,4 +68,35 @@
 
 #custom-updates {
     padding: 0px 0px 0px 10px;
+}
+
+#workspaces button.urgent {
+    color: @error_container;
+}
+
+#pulseaudio.muted {
+    color: red;
+}
+
+#pulseaudio-slider slider {
+  all: unset;
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 8px;
+  min-width: 75px;
+  border-radius: 5px;
+  background: @inverse_on_surface;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: @inverse_surface;
 }

@@ -316,3 +316,4 @@ alias syu="yay -Syu"
 alias r="reboot"
 alias y="yazi"
 
+. "$HOME/.local/bin/env"

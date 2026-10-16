@@ -14,8 +14,9 @@
     "modules-right": [
         "network",
         "custom/updates",
+        "memory",
         "cpu",
-        "pulseaudio",
+        "group/volume",
         "clock#date",
         "clock#time"
     ],
@@ -24,6 +25,13 @@
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
+
+        "memory": {
+        "interval": 30,
+        "format": "    {percentage}% ",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
+        "on-click": "exec ghostty --title=htop -e htop",
+    },
 
     "clock#time": {
         "interval": 60,
@@ -34,14 +42,14 @@
 
     "clock#date": {
       "interval": 339,
-      "format": "   {:%e %b %Y} ", // Icon: calendar-alt
+      "format": "   {:%e %b %Y} ",
       "tooltip-format": "{:%e %B %Y}",
       "on-click": "org.gnome.Calendar"
     },
 
     "cpu": {
         "interval": 9,
-        "format": "   {usage}%({load}) ", // Icon: microchip
+        "format": "   {}% ",
         "states": {
           "warning": 70,
           "critical": 90
@@ -53,9 +61,8 @@
         "interface": "enp34s0",
         "format": "     ",
         "format-wifi": "{essid} ({signalStrength}%) ",
-        //"format-ethernet": "{ipaddr}/{cidr} 󰊗",
         "format-ethernet": "     on  ",
-        "format-disconnected": "     of  ", //An empty format will hide the module.
+        "format-disconnected": "     of  ",
         "tooltip-format": "{ifname} via {gwaddr} 󰊗",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} ",
@@ -100,6 +107,18 @@
         },
         "on-click": "org.pulseaudio.pavucontrol",
         "on-click-right": "pamixer -t"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+        "group/volume": {
+      "orientation": "horizontal",
+      "modules": [
+        "pulseaudio",
+        "pulseaudio/slider"
+      ]
     },
 
     "custom/updates": {

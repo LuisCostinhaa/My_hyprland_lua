@@ -6,9 +6,6 @@ hl.env("XCURSOR_SIZE", "24")
 
 -- Settings
 hl.config({
-    decoration = {
-        rounding = 5,
-    },
     xwayland = {
         force_zero_scaling = true,
     },
