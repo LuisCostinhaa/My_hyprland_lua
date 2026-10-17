@@ -133,12 +133,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/.config/hypr/hyprland.lua" added="2026-10-13T17:41:20.779408Z" modified="2026-10-15T21:26:38.747088Z" visited="2026-10-13T17:41:20.779408Z">
+  <bookmark href="file:///home/necrofago/.config/hypr/hyprland.lua" added="2026-10-13T17:41:20.779408Z" modified="2026-10-17T16:17:30.841815Z" visited="2026-10-13T17:41:20.779408Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-lua"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-15T21:26:38.747087Z" count="5"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:17:30.841814Z" count="8"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -273,22 +273,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh" added="2026-10-14T17:08:37.017580Z" modified="2026-10-14T21:08:51.232991Z" visited="2026-10-14T17:08:37.017581Z">
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh" added="2026-10-14T17:08:37.017580Z" modified="2026-10-17T16:43:05.743520Z" visited="2026-10-14T17:08:37.017581Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-14T21:08:51.232990Z" count="4"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:43:05.743519Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh" added="2026-10-14T19:19:57.703775Z" modified="2026-10-16T10:36:36.665123Z" visited="2026-10-14T19:19:57.703776Z">
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh" added="2026-10-14T19:19:57.703775Z" modified="2026-10-17T16:40:04.220557Z" visited="2026-10-14T19:19:57.703776Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-shellscript"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:36:36.665120Z" count="3"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:40:04.220555Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -663,12 +663,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/.config/waybar/colors.css" added="2026-10-15T21:13:05.319474Z" modified="2026-10-16T10:27:15.568598Z" visited="2026-10-15T21:13:05.319475Z">
+  <bookmark href="file:///home/necrofago/.config/waybar/colors.css" added="2026-10-15T21:13:05.319474Z" modified="2026-10-16T19:49:43.798940Z" visited="2026-10-15T21:13:05.319475Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/css"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:27:15.568597Z" count="3"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T19:49:43.798939Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -693,12 +693,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/.config/waybar/style.css" added="2026-10-15T21:32:45.781188Z" modified="2026-10-16T10:36:09.541622Z" visited="2026-10-15T21:32:45.781189Z">
+  <bookmark href="file:///home/necrofago/.config/waybar/style.css" added="2026-10-15T21:32:45.781188Z" modified="2026-10-16T19:50:58.563317Z" visited="2026-10-15T21:32:45.781189Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/css"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:36:09.541620Z" count="3"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T19:50:58.563316Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -723,12 +723,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/necrofago/Transfer%C3%AAncias/dev-environment-files/zsh/.zshrc" added="2026-10-16T10:31:54.074751Z" modified="2026-10-16T10:31:54.074754Z" visited="2026-10-16T10:31:54.074752Z">
+  <bookmark href="file:///home/necrofago/Transfer%C3%AAncias/dev-environment-files/zsh/.zshrc" added="2026-10-16T10:31:54.074751Z" modified="2026-10-16T19:43:44.369147Z" visited="2026-10-16T10:31:54.074752Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:31:54.074753Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T19:43:44.369146Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -749,6 +749,56 @@
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
           <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-16T10:42:14.110690Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/Transfer%C3%AAncias/dev-environment-files/hypr/.config/hypr/hyprland.lua" added="2026-10-16T19:50:57.448898Z" modified="2026-10-17T15:54:23.638546Z" visited="2026-10-16T19:50:57.448899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-lua"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T15:54:23.638545Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_Lua_bak_2026-10-13/copy_files.sh" added="2026-10-17T16:03:11.970699Z" modified="2026-10-17T16:40:45.237326Z" visited="2026-10-17T16:03:11.970700Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:40:45.237324Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua_bak3/copy_files.sh" added="2026-10-17T16:18:03.182548Z" modified="2026-10-17T16:18:03.182551Z" visited="2026-10-17T16:18:03.182548Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:18:03.182549Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua4/copy_files.sh" added="2026-10-17T16:18:21.100494Z" modified="2026-10-17T16:18:21.100497Z" visited="2026-10-17T16:18:21.100494Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:18:21.100495Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files2.sh" added="2026-10-17T16:40:43.738747Z" modified="2026-10-17T16:41:13.254594Z" visited="2026-10-17T16:40:43.738747Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-10-17T16:41:13.254593Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

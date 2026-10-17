@@ -44,7 +44,7 @@ fi
 
 echo -e "${VERDE}[5/16] Instalando Base...${SEM_COR}"
 yay -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-headers nano \
+    bash-completion mesa-utils mtools linux-headers nano rsync \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils

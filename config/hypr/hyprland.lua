@@ -163,7 +163,7 @@ hl.config({
     },
 
     animations = {
-        enabled = false,
+        enabled = true,
     },
 })
 
@@ -311,7 +311,7 @@ hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
 hl.bind("ALT + S", hl.dsp.exec_cmd("com.sublimehq.SublimeText"))
 hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e opencode"))
+hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/Qwen3.5-0.8B-Q8_0.llamafile"))
 hl.bind("Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m window -o ~/Imagens/Screenshot"))
 hl.bind("XF86Tools", hl.dsp.exec_cmd("io.bassi.Amberol"))
 hl.bind("XF86Search", hl.dsp.exec_cmd(menu))
@@ -373,7 +373,6 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
-
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
@@ -382,8 +381,9 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 -- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 
 -- Example window rules that are useful
+--local suppressMaximizeRule = 
 
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
     name  = "suppress-maximize-events",
     match = { class = ".*" },
@@ -432,12 +432,19 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name  = "Float",
+    name  = "Float Calculadora",
     size  = "400 700",
     match = { class = "org.gnome.Calculator" },
     float = true,
 })
 
+hl.window_rule({
+    name  = "Float Thunar",
+    size  = "500 200",
+    match = { class = "^(Thunar)$" },
+    match = { title = "^(Renomear.*)$" },
+    float = true,
+})
 
 
 -- HyprMod managed settings
