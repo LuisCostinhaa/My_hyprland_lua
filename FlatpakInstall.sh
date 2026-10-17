@@ -1,12 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# ------------------------------------------------------------
+# Script de instalação automática de aplicativos Flatpak
+# ------------------------------------------------------------
+# O script:
+#  1. Verifica e adiciona o repositório Flathub (se ainda não existir).
+#  2. Instala uma lista pré‑definida de aplicativos.
+#
+# Licença: CC0 (public domain)
+# ------------------------------------------------------------
 
-# Garante que o repositório Flathub está adicionado
+# Mantém o script em modo “fail‑fast” – caso algo dê errado, ele encerra imediatamente.
+set -euo pipefail
+
 echo "Verificando o repositório Flathub..."
+
+# Adiciona o repositório Flathub apenas se ele ainda não existir
 flatpak remote-add --if-not-exists flathub https://flathub.org
 
 echo "Iniciando a instalação das aplicações..."
 
-# Lista de aplicações para instalar de forma automatizada
+# --------------------------------------------
+# Lista de aplicações a serem instaladas (via Flatpak)
+# --------------------------------------------
 APPLICATIONS=(
     "net.code_industry.MasterPDFEditor"
     "org.libreoffice.LibreOffice"
@@ -22,6 +37,9 @@ APPLICATIONS=(
     "org.pulseaudio.pavucontrol"
 )
 
+# --------------------------------------------
+# Instala cada aplicação
+# --------------------------------------------
 for app in "${APPLICATIONS[@]}"; do
     echo "--------------------------------------------"
     echo "Instalando: $app"
