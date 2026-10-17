@@ -1,22 +1,28 @@
-/* =============================================================================
+/* ================================================================
+ *  Waybar – style sheet
+ * ================================================================
  *
- * Waybar configuration
- *
- *
- * =========================================================================== */
-
+ * 1.  Import the colour palette that you defined in *colors.css*
+ * 2.  All the rules below use the variables from that file, so you can
+ *     change the whole look‑and‑feel in one place.
+ */
 @import "colors.css";
 
-/* The whole bar */
+/* ────── 1 ────── The bar itself ────── */
 #waybar {
-    background:     transparent;
-    color:          @primary_fixed;
-    font-family:    JetBrainsMono Nerd Font Propo;
-    font-weight:    500;
-    font-size:      14px;
+    /*  The bar is transparent so you can see your desktop background. */
+    background: transparent;
+    /*  Font family + size – keep the same as your config.jsonc */
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: 500;
+    font-size: 14px;
+    /*  Text colour – the “primary” colour of your palette */
+    color: @primary_fixed;
+    /*  Some padding so the icons aren’t touch the edges */
+    padding: 0px;
 }
 
-/* Each module */
+/* ────── 2 ────── General module styling ────── */
 #clock,
 #workspaces,
 #window,
@@ -25,37 +31,40 @@
 #network,
 #custom-launcher,
 #volume,
-#custom-updates{
+#custom-updates {
+    /*  All modules share the same background */
     background: @background;
-    padding: 0;
+    /*  A tiny bit of padding to keep the text centred */
+    padding: 0 5px;
+    /*  Small vertical offset so the bar is a little higher than the edge */
     margin-top: 3px;
-    margin-left: 6px;
-    margin-right: 6px;
-    border-radius: 6px;
-    border: 2px solid;
-    border-color: @inverse_primary;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 0px;
+    /*  Rounded corners */
+    border-radius: 5px;
+    /*  A 2 px solid border using the “inverse‑primary” colour */
+    border: 2px solid @inverse_primary;
 }
 
-/* -----------------------------------------------------------------------------
- * Module styles
- * -------------------------------------------------------------------------- */
-
-#cpu.warning {
-    color: @error_container;
-}
-
+/* ────── 3 ────── Module‑specific styles ────── */
+#cpu.warning,
 #cpu.critical {
+    /*  CPU is over‑loaded – use the “error‑container” colour */
     color: @error_container;
 }
 
 #network.disconnected {
+    /*  No network – use the same error colour */
     color: @error_container;
 }
 
 #network.ethernet {
+    /*  Ethernet connection – use the “on‑tertiary‑container” colour */
     color: @on_tertiary_container;
 }
 
+/*  Work‑spaces buttons – normal, empty and urgent */
 #workspaces button {
     padding: 2px 5px;
     color: @on_tertiary_container;
@@ -66,37 +75,48 @@
     color: @primary;
 }
 
-#custom-updates {
-    padding: 0px 0px 0px 10px;
-}
-
 #workspaces button.urgent {
     color: @error_container;
 }
 
+/*  Launcher icon – we only need a tiny bit of extra padding on the right */
+#custom-launcher {
+    padding-right: 5px;
+}
+
+/*  Volume – muted state */
 #pulseaudio.muted {
-    color: red;
+    color: @error_container;          /*  “red” would be hard‑coded, so use the palette */
 }
 
+/*  Volume slider – keep it invisible inside the group */
 #pulseaudio-slider slider {
-  all: unset;
-  min-height: 0;
-  min-width: 0;
-  opacity: 0;
-  background-image: none;
-  border: none;
-  box-shadow: none;
+    all: unset;
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
-
 #pulseaudio-slider trough {
-  min-height: 8px;
-  min-width: 75px;
-  border-radius: 5px;
-  background: @inverse_on_surface;
+    min-height: 8px;
+    min-width: 75px;
+    border-radius: 5px;
+    background: @inverse_on_surface;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: @inverse_surface;
 }
 
-#pulseaudio-slider highlight {
-  min-width: 10px;
-  border-radius: 5px;
-  background: @inverse_surface;
+/*  Updates module – icon padding */
+#custom-updates {
+    padding-right: 0px;
+}
+
+/*  Workspaces – the container that Waybar creates for the work‑spaces list */
+#workspaces {
+    /*  If you want to change the spacing between the buttons you can do it here */
 }
