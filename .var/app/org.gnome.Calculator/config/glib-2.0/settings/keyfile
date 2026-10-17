@@ -1,9 +1,0 @@
-[org/gnome/calculator]
-source-units=['degree']
-button-mode='basic'
-unit-category='angle'
-base=10
-window-size=(360, -1)
-history-tape=[]
-window-maximized=true
-target-units=['radian']

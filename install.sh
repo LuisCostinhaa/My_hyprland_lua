@@ -113,7 +113,7 @@ fi
 # Cópia segura de recursos globais
 [ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
 [ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
-[ -d ".var" ] && sudo mkdir -p ~/.var && sudo cp -r .var/* ~/.var
+[ -d "var" ] && sudo mkdir -p ~/.var && sudo cp -r var/* ~/.var
 [ -f "sddm.conf" ] && sudo cp sddm.conf /etc/
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
 [ -f "grub" ] && sudo cp grub /etc/default/

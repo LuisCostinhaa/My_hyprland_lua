@@ -24,6 +24,7 @@ echo "===  Starting backup of configuration files  ==="
 # ──────────────────────────────────────────────────────────────────────
 mkdir -p \
     "$DEST_DIR/config" \
+    "$DEST_DIR/var/app" \
     "$DEST_DIR/sddm/Backgrounds"
 
 # ──────────────────────────────────────────────────────────────────────
@@ -36,7 +37,6 @@ declare -a USER_FILES=(
     ".zshenv"
     ".bashrc"
     "Imagens/backgrounds"   # <-- your custom folder
-    ".var"
 )
 
 for src in "${USER_FILES[@]}"; do
@@ -118,7 +118,26 @@ for folder in "${CFG_FOLDERS[@]}"; do
 done
 
 # ──────────────────────────────────────────────────────────────────────
-# 7. Copy any lone configuration files you listed explicitly
+# 7. Mirror the contents of ~/.config (only the folders you listed)
+# ──────────────────────────────────────────────────────────────────────
+echo "→  Copying selected folders from ~/.var …"
+
+# The folders you actually want to back up – feel free to add/remove
+declare -a CFG_FOLDERS=(
+    "com.sublimehq.SublimeText"
+)
+
+# Create destination sub‑folders first (so `rsync` can use them)
+for folder in "${CFG_FOLDERS[@]}"; do
+    [[ -d "$HOME/.var/app/$folder" ]] || { echo "⚠️  $folder not found – skipping"; continue; }
+
+    mkdir -p "$DEST_DIR/var/app/$folder"
+    # Preserve everything – links, timestamps, permissions
+    rsync -a "$HOME/.var/app/$folder/." "$DEST_DIR/var/app/$folder/"
+done
+
+# ──────────────────────────────────────────────────────────────────────
+# 8. Copy any lone configuration files you listed explicitly
 # ──────────────────────────────────────────────────────────────────────
 echo "→  Copying any extra files from ~/.config …"
 
@@ -133,7 +152,7 @@ for f in "${EXTRA_FILES[@]}"; do
 done
 
 # ──────────────────────────────────────────────────────────────────────
-# 8. Restore the ownership to your user (no more root:root files!)
+# 9. Restore the ownership to your user (no more root:root files!)
 # ──────────────────────────────────────────────────────────────────────
 echo "→  Fixing ownership / permissions…"
 
