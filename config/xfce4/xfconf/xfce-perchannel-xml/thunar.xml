@@ -10,7 +10,7 @@
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_32"/>
   <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_24"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,160,156,98,439,50,50,629,50,50,91,50,120"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,162,155,98,439,50,50,1631,50,50,89,50,241"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_TYPE"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="misc-full-path-in-tab-title" type="bool" value="false"/>

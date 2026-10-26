@@ -60,7 +60,7 @@ local appkill = "hyprctl kill"
 -- end)
 hl.on("hyprland.start", function () 
   hl.exec_cmd(" /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
-  hl.exec_cmd("awww-daemon & swaync & udiskie & waybar")
+  hl.exec_cmd("awww-daemon & swaync & udiskie & waybar & quickshell")
   hl.exec_cmd("awww restore")
  -- hl.exec_cmd("quickshell")
   --hl.exec_cmd("waybar & hyprpaper --restore & swaync & udiskie") -- Execute waybar, hyprpaper, firefox
@@ -304,19 +304,20 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 
 hl.bind("ALT + T", hl.dsp.exec_cmd(fileManager))
 hl.bind("ALT + L", hl.dsp.exec_cmd("librewolf"))
-hl.bind("ALT + B", hl.dsp.exec_cmd("brave"))
-hl.bind("ALT + D", hl.dsp.exec_cmd("darktable"))
+hl.bind("ALT + B", hl.dsp.exec_cmd("com.brave.Browser"))
+hl.bind("ALT + D", hl.dsp.exec_cmd("~/Appimages/darktable.appimage"))
 hl.bind("ALT + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
 hl.bind("ALT + S", hl.dsp.exec_cmd("com.sublimehq.SublimeText"))
 hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + SHIFT + CTRL + Z", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/Qwen3.5-0.8B-Q8_0.llamafile"))
 hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/gpt-oss-20b-Q5_K_S.llamafile"))
 hl.bind("Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m window -o ~/Imagens/Screenshot"))
 hl.bind("XF86Tools", hl.dsp.exec_cmd("io.bassi.Amberol"))
 hl.bind("XF86Search", hl.dsp.exec_cmd(menu))
 hl.bind("XF86Mail", hl.dsp.exec_cmd("librewolf"))
-hl.bind("XF86HomePage", hl.dsp.exec_cmd("brave"))
+hl.bind("XF86HomePage", hl.dsp.exec_cmd("com.brave.Browser"))
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("org.gnome.Calculator"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m region -o ~/Imagens/Screenshot"))
 
@@ -427,7 +428,7 @@ hl.window_rule({
 hl.window_rule({
     name  = "Float Windows",
     size  = "1150 700",
-    match = { class = "nvidia-settings|solaar|com.transmissionbt.Transmission._66307_11535094|kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
+    match = { class = "it.mijorus.gearlever|vlc|nvidia-settings|solaar|com.transmissionbt.Transmission._66307_11535094|kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
     float = true,
 })
 
@@ -442,7 +443,7 @@ hl.window_rule({
     name  = "Float Thunar",
     size  = "500 200",
     match = { class = "^(Thunar)$" },
-    match = { title = "^(Renomear.*)$" },
+    match = { title = "^(Renomear.*)$|^(Progresso da operação do ficheiro.*)$" },
     float = true,
 })
 

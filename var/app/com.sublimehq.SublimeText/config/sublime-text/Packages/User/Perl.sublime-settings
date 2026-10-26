@@ -1,6 +1,7 @@
 {
 	"extensions":
 	[
-		"PosInstall"
-	]
+		"PosInstall",
+		"conf",
+	],
 }

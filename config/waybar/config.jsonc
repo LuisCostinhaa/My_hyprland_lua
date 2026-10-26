@@ -42,9 +42,9 @@
     /* Memory – shows the percentage used and opens htop when clicked */
     "memory": {
         "interval": 30,
-        "format": "    {percentage}% ",
+        "format": "   {percentage}% ",
         "tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
-        "on-click": "exec ghostty --title=htop -e htop"
+        "on-click": "io.missioncenter.MissionCenter"
     },
 
     /* Clock – time */
@@ -66,7 +66,7 @@
     /* CPU – shows load with colour thresholds and opens btop */
     "cpu": {
         "interval": 9,
-        "format": "   {}% ",
+        "format": "    {}% ",
         "states": {
             "warning": 70,
             "critical": 90

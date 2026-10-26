@@ -35,6 +35,8 @@ APPLICATIONS=(
     "org.gnome.clocks"
     "io.bassi.Amberol"
     "org.pulseaudio.pavucontrol"
+    "it.mijorus.gearlever"
+    "com.brave.Browser"
 )
 
 # --------------------------------------------
