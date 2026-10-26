@@ -40,14 +40,14 @@ fi
 
 echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-lts-headers nano rsync \
+    bash-completion mesa-utils mtools linux-headers nano rsync \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
 
 echo -e "${VERDE}[4/13] Instalando Hyprland...${SEM_COR}"
-sudo pacman -S --needed --noconfirm \
-    hyprland hyprpaper qt5-wayland qt6-waylandxdg-desktop-portal-hyprland \
+sudo pacman  -S --needed --noconfirm \
+    hyprland hyprpaper qt5-wayland qt6-wayland xdg-desktop-portal-hyprland \
     hyprshot xdg-desktop-portal-gtk qt5ct qt6ct hyprpicker fcitx5-gtk fcitx5-qt
 
 echo -e "${VERDE}[5/13] Instalando File Manager...${SEM_COR}"
