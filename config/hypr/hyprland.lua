@@ -62,8 +62,10 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd(" /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
   hl.exec_cmd("awww-daemon & swaync & udiskie & waybar & quickshell")
   hl.exec_cmd("awww restore")
- -- hl.exec_cmd("quickshell")
+  --hl.exec_cmd("quickshell")
   --hl.exec_cmd("waybar & hyprpaper --restore & swaync & udiskie") -- Execute waybar, hyprpaper, firefox
+  --hl.exec("once", "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
+
 end)
 
 -------------------------------

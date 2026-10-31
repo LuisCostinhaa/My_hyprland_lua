@@ -304,7 +304,6 @@ alias listt="sudo pacman -Qqet"
 alias listaur="sudo pacman -Qqem"
 alias f="yazi"
 alias matrix="cmatrix  -s"
-alias reloud="source ~/.zshrc"
 alias p="poweroff"
 alias papirus="papirus-folders -C"
 alias sy="yay -Sy"
@@ -315,4 +314,5 @@ alias cpu="sudo auto-cpufreq --live"
 alias syu="yay -Syu"
 alias r="reboot"
 alias y="yazi"
+alias timeshift='sudo GTK_THEME=adw-gtk3-dark:dark timeshift-gtk'
 

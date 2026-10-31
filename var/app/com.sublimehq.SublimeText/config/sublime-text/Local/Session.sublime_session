@@ -2,7 +2,26 @@
 	"file_history":
 	[
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+		"/home/necrofago/.config/ly/config.ini",
+		"/etc/ly/config.ini",
+		"/etc/ly/save.txt",
+		"/etc/ly/startup.sh",
+		"/etc/ly",
+		"/home/necrofago/PKG/base_install/Configuracoes",
+		"/home/necrofago/.zshrc",
+		"/home/necrofago/.local/share/applications/timeshift-gtk.desktop",
+		"/run/user/1000/doc/R5MzszZeQdQnBgTng6OPRg/timeshift-gtk.desktop",
+		"/home/necrofago/Imagens/Captura de ecrã de 2024-07-25 15-38-21.png",
+		"/home/necrofago/Imagens/OrderSummary202609043076215503854976.png",
+		"/home/necrofago/Imagens/0XT31758.jpg.arp",
+		"/home/necrofago/Imagens/Degrade.tif.pp3",
+		"/home/necrofago/Imagens/link.txt",
 		"/home/necrofago/.config/hypr/hyprland.lua",
+		"/home/necrofago/Imagens/packages.x86_64",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 		"/home/necrofago/.config/waybar/config.jsonc",
 		"/home/necrofago/.config/waybar/style.css",
@@ -22,9 +41,6 @@
 		"/home/necrofago/.config/quickshell/shell.qml",
 		"/home/necrofago/.config/quickshell/quickshell-config/bar/Bar.qml",
 		"/home/necrofago/.config/quickshell/quickshell-config/shell.qml",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-		"/home/necrofago/.zshrc",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall2.sh",
 		"/home/necrofago/.config/waybar/update_system.sh",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/waybar/style.css",
@@ -96,7 +112,6 @@
 		"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
 		"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
 		"/home/necrofago/.themes/adw-gtk3/index.theme",
-		"/home/necrofago/PKG/base_install/Configuracoes",
 		"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
 	],
 	"folder_history":
@@ -105,11 +120,11 @@
 	"last_version": 4215,
 	"last_window_id": 12,
 	"log_indexing": false,
-	"next_update_check": 1793107817,
+	"next_update_check": 1793539817,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1393.0,
+		"new_window_height": 1440.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -172,7 +187,26 @@
 			"file_history":
 			[
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+				"/home/necrofago/.config/ly/config.ini",
+				"/etc/ly/config.ini",
+				"/etc/ly/save.txt",
+				"/etc/ly/startup.sh",
+				"/etc/ly",
+				"/home/necrofago/PKG/base_install/Configuracoes",
+				"/home/necrofago/.zshrc",
+				"/home/necrofago/.local/share/applications/timeshift-gtk.desktop",
+				"/run/user/1000/doc/R5MzszZeQdQnBgTng6OPRg/timeshift-gtk.desktop",
+				"/home/necrofago/Imagens/Captura de ecrã de 2024-07-25 15-38-21.png",
+				"/home/necrofago/Imagens/OrderSummary202609043076215503854976.png",
+				"/home/necrofago/Imagens/0XT31758.jpg.arp",
+				"/home/necrofago/Imagens/Degrade.tif.pp3",
+				"/home/necrofago/Imagens/link.txt",
 				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/Imagens/packages.x86_64",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.config/waybar/config.jsonc",
 				"/home/necrofago/.config/waybar/style.css",
@@ -192,9 +226,6 @@
 				"/home/necrofago/.config/quickshell/shell.qml",
 				"/home/necrofago/.config/quickshell/quickshell-config/bar/Bar.qml",
 				"/home/necrofago/.config/quickshell/quickshell-config/shell.qml",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall2.sh",
 				"/home/necrofago/.config/waybar/update_system.sh",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/waybar/style.css",
@@ -261,7 +292,6 @@
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
 				"/home/necrofago/.themes/adw-gtk3/index.theme",
-				"/home/necrofago/PKG/base_install/Configuracoes",
 				"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
 			],
 			"find":
@@ -355,7 +385,7 @@
 			{
 			}
 		},
-		"new_window_width": 1277.0
+		"new_window_width": 2560.0
 	},
 	"windows":
 	[
@@ -418,7 +448,26 @@
 			"file_history":
 			[
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+				"/home/necrofago/.config/ly/config.ini",
+				"/etc/ly/config.ini",
+				"/etc/ly/save.txt",
+				"/etc/ly/startup.sh",
+				"/etc/ly",
+				"/home/necrofago/PKG/base_install/Configuracoes",
+				"/home/necrofago/.zshrc",
+				"/home/necrofago/.local/share/applications/timeshift-gtk.desktop",
+				"/run/user/1000/doc/R5MzszZeQdQnBgTng6OPRg/timeshift-gtk.desktop",
+				"/home/necrofago/Imagens/Captura de ecrã de 2024-07-25 15-38-21.png",
+				"/home/necrofago/Imagens/OrderSummary202609043076215503854976.png",
+				"/home/necrofago/Imagens/0XT31758.jpg.arp",
+				"/home/necrofago/Imagens/Degrade.tif.pp3",
+				"/home/necrofago/Imagens/link.txt",
 				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/Imagens/packages.x86_64",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.config/waybar/config.jsonc",
 				"/home/necrofago/.config/waybar/style.css",
@@ -438,9 +487,6 @@
 				"/home/necrofago/.config/quickshell/shell.qml",
 				"/home/necrofago/.config/quickshell/quickshell-config/bar/Bar.qml",
 				"/home/necrofago/.config/quickshell/quickshell-config/shell.qml",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall2.sh",
 				"/home/necrofago/.config/waybar/update_system.sh",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/waybar/style.css",
@@ -507,7 +553,6 @@
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
 				"/home/necrofago/.themes/adw-gtk3/index.theme",
-				"/home/necrofago/PKG/base_install/Configuracoes",
 				"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
 			],
 			"find":

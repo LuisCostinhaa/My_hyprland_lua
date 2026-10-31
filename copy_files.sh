@@ -25,7 +25,7 @@ echo "===  Starting backup of configuration files  ==="
 mkdir -p \
     "$DEST_DIR/config" \
     "$DEST_DIR/var/app" \
-    "$DEST_DIR/sddm/Backgrounds"
+    "$DEST_DIR/ly"
 
 # ──────────────────────────────────────────────────────────────────────
 #  3. Copy user‑specific files
@@ -56,10 +56,10 @@ sudo -v
 # List of files / directories we care about
 declare -a SYS_FILES=(
     "/usr/local/share/fonts"
-    "/etc/sddm.conf"
     "/etc/pacman.conf"
     "/etc/makepkg.conf"
     "/etc/default/grub"
+    "/etc/vconsole.conf"
 )
 
 for src in "${SYS_FILES[@]}"; do
@@ -68,16 +68,14 @@ for src in "${SYS_FILES[@]}"; do
 done
 
 # ──────────────────────────────────────────────────────────────────────
-# 5. Copy the SDDM theme (if it exists)
+# 5. Copy the ly theme (if it exists)
 # ──────────────────────────────────────────────────────────────────────
-if [[ -d "/usr/share/sddm/themes/Sugar-Candy" ]]; then
-    echo "→  Copying the Sugar‑Candy SDDM theme…"
+if [[ -d "/etc/ly" ]]; then
+    echo "→  Copying the ly theme…"
 
-    sudo cp -a "/usr/share/sddm/themes/Sugar-Candy/Backgrounds/." \
-        "$DEST_DIR/sddm/Backgrounds/"
+    sudo cp -a "/etc/ly/config.ini" \
+        "$DEST_DIR/ly"
 
-    sudo cp -a "/usr/share/sddm/themes/Sugar-Candy/theme.conf" \
-        "$DEST_DIR/sddm/"
 fi
 
 # ──────────────────────────────────────────────────────────────────────

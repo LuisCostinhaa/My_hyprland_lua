@@ -40,7 +40,7 @@ fi
 
 echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-headers nano rsync \
+    bash-completion mesa-utils mtools linux-headers nano rsync mako \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
@@ -60,7 +60,8 @@ sudo pacman -S --needed --noconfirm \
 
 echo -e "${VERDE}[7/13] Instalando Fonts...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-liberation
+    ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji \
+    ttf-dejavu ttf-liberation terminus-font
 
 echo -e "${VERDE}[8/13] Instalando Audio...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
@@ -72,36 +73,31 @@ sudo pacman -S --needed --noconfirm \
 
 echo -e "${VERDE}[10/13] Instalando Apps (Parte 1)...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    gnome-disk-utility xarchiver meld alacritty kitty fastfetch ufw sddm \
+    gnome-disk-utility xarchiver meld alacritty kitty fastfetch ufw ly \
     btop librewolf keepassxc solaar android-file-transfer flatpak rofi awww
 
 echo -e "${VERDE}[11/13] Enable Service...${SEM_COR}"
-sudo systemctl enable sddm.service
+sudo systemctl enable ly@tty1.service
 sudo systemctl enable ufw.service
 sudo systemctl start ufw.service
 sudo ufw --force enable
 
 echo -e "${VERDE}[12/16] Instalando AUR...${SEM_COR}"
 yay -S --needed --noconfirm matugen-bin hyprmod waybar-git papirus-folders \
-    waypaper-git waybar-module-pacman-updates-git sddm-theme-sugar-candy-git
+    waypaper-git waybar-module-pacman-updates-git
 
 echo -e "${VERDE}[13/13] Movendo arquivos de configuração e aplicando permissões...${SEM_COR}"
 
     #########################   Atualizar pastas locais    ##############################
 xdg-user-dirs-update
 
-    #########################   Instalação segura do tema SDDM   ##############################
-if [ -d "sddm" ]; then
-    sudo mkdir -p /usr/share/sddm/themes/Sugar-Candy
-    sudo cp -r sddm/* /usr/share/sddm/themes/Sugar-Candy/
-fi
-
     #########################   Cópia segura de recursos globais   ##############################
 [ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
 [ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
 [ -d "var" ] && sudo mkdir -p ~/.var && sudo cp -r var/* ~/.var
-[ -f "sddm.conf" ] && sudo cp sddm.conf /etc/
+[ -d "ly" ] && sudo mkdir -p ~/etc/ly && sudo cp -r ly/* ~/etc/ly
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
+[ -f "vconsole.conf" ] && sudo cp vconsole.conf /etc/
 [ -f "grub" ] && sudo cp grub /etc/default/
 
     #########################   Cópia de dotfiles (.config e shell)   ##############################

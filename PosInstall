@@ -16,3 +16,6 @@ curl -fsSL https://raw.githubusercontent.com/darktable-org/darktable/HEAD/tools/
 
 ############################################################################
 
+	Trim
+sudo systemctl enable --now fstrim.timer
+systemctl status fstrim.timer
