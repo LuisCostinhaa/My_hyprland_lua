@@ -431,7 +431,7 @@ hl.window_rule({
 hl.window_rule({
     name  = "Float Windows",
     size  = "1150 700",
-    match = { class = "it.mijorus.gearlever|vlc|nvidia-settings|solaar|com.transmissionbt.Transmission._66307_11535094|kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
+    match = { class = "it.mijorus.gearlever|vlc|nvidia-settings|solaar|com.transmissionbt.transmission|timeshift-gtk|kitty|org.gnome.DiskUtility|io.bassi.Amberol|org.gnome.Calendar|xdg-desktop-portal-gtk|python3|org.pulseaudio.pavucontrol|Color Picker|Network|xdg-desktop-portal|xdg-desktop-portal-hyprland|xdg-desktop-portal-gnome|org.gnome.clocks|io.missioncenter.MissionCenter|pavucontrol-qt|nwg-look|org.keepassxc.KeePassXC|com.transmissionbt.transmission_66307_11535566" },
     float = true,
 })
 

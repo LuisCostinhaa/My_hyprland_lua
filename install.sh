@@ -12,17 +12,6 @@ SEM_COR='\033[0m'
 MYHOSTNM="${MYHOSTNM:-$USER}"
 SCRIPT_DIR="$(pwd)"
 
-#echo -e "${VERDE}[1/16] Configurando chaves e repositórios (Chaotic-AUR)...${SEM_COR}"
-#sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-#sudo pacman-key --lsign-key 3056513887B78AEB
-#sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-#sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-
-# Correção do pacman.conf (Adicionar o Chaotic-AUR antes de atualizar)
-#if [ -f pacman.conf ]; then
-#    sudo cp pacman.conf /etc/pacman.conf
-#fi
-
 echo -e "${VERDE}[1/13] Instalando dependências básicas e programas base...${SEM_COR}"
 sudo pacman -Syyyu --needed --noconfirm base-devel git
 
@@ -41,13 +30,13 @@ fi
 echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
     bash-completion mesa-utils mtools linux-headers nano rsync mako \
-    dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs \
+    dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs swaync \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
 
 echo -e "${VERDE}[4/13] Instalando Hyprland...${SEM_COR}"
 sudo pacman  -S --needed --noconfirm \
-    hyprland hyprpaper qt5-wayland qt6-wayland xdg-desktop-portal-hyprland \
+    hyprland qt5-wayland qt6-wayland xdg-desktop-portal-hyprland \
     hyprshot xdg-desktop-portal-gtk qt5ct qt6ct hyprpicker fcitx5-gtk fcitx5-qt
 
 echo -e "${VERDE}[5/13] Instalando File Manager...${SEM_COR}"
@@ -73,11 +62,12 @@ sudo pacman -S --needed --noconfirm \
 
 echo -e "${VERDE}[10/13] Instalando Apps (Parte 1)...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    gnome-disk-utility xarchiver meld alacritty kitty fastfetch ufw ly \
+    gnome-disk-utility xarchiver meld alacritty kitty fastfetch ufw ly cmatrix \
     btop librewolf keepassxc solaar android-file-transfer flatpak rofi awww
 
 echo -e "${VERDE}[11/13] Enable Service...${SEM_COR}"
 sudo systemctl enable ly@tty1.service
+sudo systemctl enable --now fstrim.timer
 sudo systemctl enable ufw.service
 sudo systemctl start ufw.service
 sudo ufw --force enable
@@ -95,7 +85,7 @@ xdg-user-dirs-update
 [ -d "backgrounds" ] && mkdir -p ~/Imagens/backgrounds && cp -r backgrounds/* ~/Imagens/backgrounds
 [ -d "fonts" ] && sudo mkdir -p /usr/local/share/fonts && sudo cp -r fonts/* /usr/local/share/fonts/
 [ -d "var" ] && sudo mkdir -p ~/.var && sudo cp -r var/* ~/.var
-[ -d "ly" ] && sudo mkdir -p ~/etc/ly && sudo cp -r ly/* ~/etc/ly
+[ -d "ly" ] && sudo mkdir -p ~/etc/ly && sudo cp -r ly/* /etc/ly
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
 [ -f "vconsole.conf" ] && sudo cp vconsole.conf /etc/
 [ -f "grub" ] && sudo cp grub /etc/default/
@@ -129,7 +119,5 @@ echo -e "${VERDE}Configurando o ZSH como shell padrão...${SEM_COR}"
 sudo chsh -s /bin/zsh root
 sudo chsh -s /bin/zsh "${MYHOSTNM}"
 
-    #########################   SSD TRIM   ##############################
-sudo systemctl enable --now fstrim.timer
-
+    #########################   Fim   ##############################
 echo -e "${VERDE}Configuração concluída com sucesso!${SEM_COR}"

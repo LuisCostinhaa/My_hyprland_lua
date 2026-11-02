@@ -72,10 +72,8 @@ done
 # ──────────────────────────────────────────────────────────────────────
 if [[ -d "/etc/ly" ]]; then
     echo "→  Copying the ly theme…"
-
     sudo cp -a "/etc/ly/config.ini" \
         "$DEST_DIR/ly"
-
 fi
 
 # ──────────────────────────────────────────────────────────────────────
@@ -99,6 +97,7 @@ declare -a CFG_FOLDERS=(
     "qt6ct"
     "rofi"
     "scripts"
+    "swaync"
     "Thunar"
     "waybar"
     "xfce4"

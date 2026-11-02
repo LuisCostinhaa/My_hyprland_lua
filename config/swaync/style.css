@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Variáveis de Cores (Opcional, mas recomendado para fácil manutenção)
+   ========================================================================== */
+
+@define-color foreground #ffffff;
+
+@import "colors.css";
+
+/* ==========================================================================
+   Estilos Globais
+   ========================================================================== */
+* {
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 18px;
+  transition: all 200ms ease;
+}
+
+/* ==========================================================================
+   Janela Principal do Centro de Controlo (Control Center)
+   ========================================================================== */
+.control-center {
+  background: @background;
+  color: @foreground;
+  border-radius: 12px;
+  border: 1px solid @primary;
+  margin: 8px;
+  padding: 10px;
+}
+
+/* Janela invisível que captura cliques fora para fechar o menu */
+.blank-window {
+  background: transparent;
+}
+
+/* ==========================================================================
+   Popups Flutuantes (Notificações fora do Centro de Controlo)
+   ========================================================================== */
+.floating-notifications {
+  background: transparent;
+}
+
+/* Elemento que envolve cada linha de notificação individual */
+.notification-row {
+  outline: none;
+  margin: 6px 12px;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: transparent;
+}
+
+/* O container interno da notificação */
+.notification {
+  background: @background;
+  padding: 0px;
+  border-radius: 6px;
+  border: 2px solid @primary;
+}
+
+/* Estado de urgência Crítica (ex: bateria fraca) */
+.notification.critical {
+  border: 2px solid @error;
+}
+
+/* ==========================================================================
+   Elementos Internos da Notificação
+   ========================================================================== */
+.notification-content {
+  margin: 5px;
+}
+
+.notification-content .summary {
+  font-weight: bold;
+  color: @foreground;
+}
+
+.notification-content .body {
+  color: @primary;
+  font-size: 14px;
+}
+
+.notification-content .time {
+  color: @primary;
+  font-size: 14px;
+}
+
+/* Ícone da aplicação e imagens anexadas */
+.notification-content .app-icon {
+  margin-right: 8px;
+}
+
+.notification-content .image {
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+/* Botão de Fechar da Notificação */
+.close-button {
+  background: transparent;
+  color: @primary;
+  border-radius: 100%;
+  padding: 2px;
+}
+
+.close-button:hover {
+  background: @error;
+  color: @background;
+}
+
+/* Botões de Ação (ex: "Responder", "Aceitar") */
+.notification-action {
+  background: @background;
+  border: 2px solid @primary;
+  border-radius: 6px;
+  color: @foreground;
+  padding: 4px;
+  margin: 4px;
+}
+
+.notification-action:hover {
+  background: @on_background;
+}
+
+/* ==========================================================================
+   Widgets Internos do Centro de Controlo
+   ========================================================================== */
+
+/* Título e Botão de Limpar Tudo (widget "title") */
+.widget-title {
+  margin: 8px;
+}
+.widget-title > label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.widget-title > button {
+  background: @background;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+.widget-title > button:hover {
+  background: @background;
+  color: @background;
+}
+
+/* Interruptor Não Incomodar (widget "dnd") */
+.widget-dnd {
+  margin: 8px;
+}
+.widget-dnd > switch {
+  border-radius: 12px;
+  background: @background;
+}
+.widget-dnd > switch:checked {
+  background: @background;
+}
+
+/* Reprodutor de Média (widget "mpris") */
+.widget-mpris {
+  background: @background;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px;
+}
+.widget-mpris-player {
+  padding: 5px;
+}
+.widget-mpris-title {
+  font-weight: bold;
+}
+.widget-mpris-subtitle {
+  color: @primary;
+}
