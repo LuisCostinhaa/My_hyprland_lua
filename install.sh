@@ -29,7 +29,7 @@ fi
 
 echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-headers nano rsync mako \
+    bash-completion mesa-utils mtools linux-zen-headers nano rsync mako \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs swaync \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
     cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
