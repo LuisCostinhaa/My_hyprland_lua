@@ -293,7 +293,7 @@ alias reload="sudo fc-cache -vf"
 alias telemovel="simple-mtpfs --device 1 ~/Telemovel"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias update-mirrorlist="sudo reflector -c Portugal -c Spain -c germany -a 12 -p https -p http --sort rate --score 10 --save /etc/pacman.d/mirrorlist"
-alias update-mkinitcpio="sudo mkinitcpio -P linux"
+alias update-mkinitcpio="sudo mkinitcpio -P"
 alias vcahe="du -sh /var/cache/pacman/pkg/"
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 alias howold="sudo lshw | grep -B 3 -A 8 BIOS"
@@ -314,5 +314,3 @@ alias cpu="sudo auto-cpufreq --live"
 alias syu="yay -Syu"
 alias r="reboot"
 alias y="yazi"
-alias timeshift='sudo GTK_THEME=adw-gtk3-dark:dark timeshift-gtk'
-
