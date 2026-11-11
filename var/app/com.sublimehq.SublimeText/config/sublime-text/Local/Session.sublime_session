@@ -2,30 +2,33 @@
 	"file_history":
 	[
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+		"/home/necrofago/.config/hypr/hyprland.lua",
+		"/home/necrofago/.config/waybar/colors.css",
+		"/home/necrofago/.config/waybar/style.css",
+		"/home/necrofago/.config/hypr/colors.lua",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+		"/home/necrofago/.bashrc",
+		"/home/necrofago/.zshrc",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 		"/home/necrofago/PKG/base_install/git.txt",
 		"/home/necrofago/.bash_profile",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 		"/home/necrofago/.config/keepassxc/keepassxc.ini",
-		"/home/necrofago/.config/hypr/hyprland.lua",
 		"/home/necrofago/.config/qt6ct/qt6ct.conf",
 		"/home/necrofago/.config/qt5ct/qt5ct.conf",
 		"/home/necrofago/.local/share/color-schemes/color.colors",
 		"/home/necrofago/.config/swaync/colors.css",
-		"/home/necrofago/.config/waybar/style.css",
 		"/home/necrofago/.config/rofi/launchers/style.rasi",
 		"/home/necrofago/.config/swaync/style.css",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
 		"/home/necrofago/.config/ly/config.ini",
 		"/etc/ly/config.ini",
 		"/etc/ly/save.txt",
 		"/etc/ly/startup.sh",
 		"/etc/ly",
 		"/home/necrofago/PKG/base_install/Configuracoes",
-		"/home/necrofago/.zshrc",
 		"/home/necrofago/.local/share/applications/timeshift-gtk.desktop",
 		"/run/user/1000/doc/R5MzszZeQdQnBgTng6OPRg/timeshift-gtk.desktop",
 		"/home/necrofago/Imagens/Captura de ecrã de 2024-07-25 15-38-21.png",
@@ -59,13 +62,11 @@
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua4/copy_files.sh",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua_bak3/copy_files.sh",
 		"/home/necrofago/Transferências/dev-environment-files/hypr/.config/hypr/hyprland.lua",
-		"/home/necrofago/.config/waybar/colors.css",
 		"/home/necrofago/Transferências/dev-environment-files/zsh/.zshrc",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/glib-2.0/settings/keyfile",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/user-dirs.dirs",
 		"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/config.jsonc",
 		"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/style.css",
-		"/home/necrofago/.config/hypr/colors.lua",
 		"/home/necrofago/.nvidia-settings-rc",
 		"/home/necrofago/PKG/list.txt",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/qt6ct/qt6ct.conf",
@@ -129,7 +130,7 @@
 	"last_version": 4215,
 	"last_window_id": 13,
 	"log_indexing": false,
-	"next_update_check": 1794058217,
+	"next_update_check": 1794490217,
 	"settings":
 	{
 		"new_window_full_screen": false,
@@ -138,7 +139,7 @@
 		"new_window_position":
 		[
 			0.0,
-			29.0
+			27.0
 		],
 		"new_window_settings":
 		{
@@ -146,6 +147,14 @@
 			{
 				"selected_items":
 				[
+					[
+						"light",
+						"lightblue"
+					],
+					[
+						"ligh",
+						"lightblue"
+					],
 					[
 						"mar",
 						"margin-bottom"
@@ -195,24 +204,27 @@
 			},
 			"file_history":
 			[
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/.config/waybar/colors.css",
+				"/home/necrofago/.config/waybar/style.css",
+				"/home/necrofago/.config/hypr/colors.lua",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+				"/home/necrofago/.bashrc",
+				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 				"/home/necrofago/PKG/base_install/git.txt",
 				"/home/necrofago/.bash_profile",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.config/keepassxc/keepassxc.ini",
-				"/home/necrofago/.config/hypr/hyprland.lua",
 				"/home/necrofago/.config/qt6ct/qt6ct.conf",
 				"/home/necrofago/.config/qt5ct/qt5ct.conf",
 				"/home/necrofago/.local/share/color-schemes/color.colors",
 				"/home/necrofago/.config/swaync/style.css",
-				"/home/necrofago/.config/waybar/style.css",
 				"/home/necrofago/.config/swaync/colors.css",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
 				"/home/necrofago/.config/ly/config.ini",
 				"/etc/ly/config.ini",
 				"/etc/ly/save.txt",
@@ -257,8 +269,6 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/user-dirs.dirs",
 				"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/config.jsonc",
 				"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/style.css",
-				"/home/necrofago/.config/waybar/colors.css",
-				"/home/necrofago/.config/hypr/colors.lua",
 				"/home/necrofago/.nvidia-settings-rc",
 				"/home/necrofago/PKG/list.txt",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/qt6ct/qt6ct.conf",
@@ -412,6 +422,14 @@
 				"selected_items":
 				[
 					[
+						"light",
+						"lightblue"
+					],
+					[
+						"ligh",
+						"lightblue"
+					],
+					[
 						"mar",
 						"margin-bottom"
 					]
@@ -420,50 +438,15 @@
 			"buffers":
 			[
 				{
-					"file": "/home/necrofago/.zshrc",
-					"file_size": 10982,
-					"file_write_time": 134384787601190383,
+					"file": "/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+					"file_size": 4810,
+					"file_write_time": 134388795936180984,
 					"settings":
 					{
-						"buffer_size": 10982,
+						"buffer_size": 4790,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							3,
-							2,
-							"left_delete",
-							null,
-							"AgAAAOwqAAAAAAAA7CoAAAAAAABBAAAAYWxpYXMgdGltZXNoaWZ0PSdzdWRvIEdUS19USEVNRT1hZHctZ3RrMy1kYXJrOmRhcmsgdGltZXNoaWZ0LWd0ayfrKgAAAAAAAOsqAAAAAAAAAQAAAAo",
-							"AQAAAAAAAAABAAAALSsAAAAAAADsKgAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							5,
-							1,
-							"left_delete",
-							null,
-							"AQAAAOsqAAAAAAAA6yoAAAAAAAABAAAACg",
-							"AQAAAAAAAAABAAAA7CoAAAAAAADsKgAAAAAAAAAAAAAAgGFA"
-						],
-						[
-							8,
-							5,
-							"left_delete",
-							null,
-							"BQAAAEgoAAAAAAAASCgAAAAAAAABAAAAeEcoAAAAAAAARygAAAAAAAABAAAAdUYoAAAAAAAARigAAAAAAAABAAAAbkUoAAAAAAAARSgAAAAAAAABAAAAaUQoAAAAAAAARCgAAAAAAAABAAAAbA",
-							"AQAAAAAAAAABAAAASSgAAAAAAABJKAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							9,
-							1,
-							"left_delete",
-							null,
-							"AQAAAEMoAAAAAAAAQygAAAAAAAABAAAAIA",
-							"AQAAAAAAAAABAAAARCgAAAAAAABEKAAAAAAAAAAAAAAAAPC/"
-						]
-					]
+					}
 				}
 			],
 			"build_system": "",
@@ -511,29 +494,32 @@
 			"file_history":
 			[
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/.config/waybar/colors.css",
+				"/home/necrofago/.config/waybar/style.css",
+				"/home/necrofago/.config/hypr/colors.lua",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+				"/home/necrofago/.bashrc",
+				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 				"/home/necrofago/PKG/base_install/git.txt",
 				"/home/necrofago/.bash_profile",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.config/keepassxc/keepassxc.ini",
-				"/home/necrofago/.config/hypr/hyprland.lua",
 				"/home/necrofago/.config/qt6ct/qt6ct.conf",
 				"/home/necrofago/.config/qt5ct/qt5ct.conf",
 				"/home/necrofago/.local/share/color-schemes/color.colors",
 				"/home/necrofago/.config/swaync/style.css",
-				"/home/necrofago/.config/waybar/style.css",
 				"/home/necrofago/.config/swaync/colors.css",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/vconsole.conf",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/ly/config.ini",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
 				"/home/necrofago/.config/ly/config.ini",
 				"/etc/ly/config.ini",
 				"/etc/ly/save.txt",
 				"/etc/ly/startup.sh",
 				"/etc/ly",
 				"/home/necrofago/PKG/base_install/Configuracoes",
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/.local/share/applications/timeshift-gtk.desktop",
 				"/run/user/1000/doc/R5MzszZeQdQnBgTng6OPRg/timeshift-gtk.desktop",
 				"/home/necrofago/Imagens/Captura de ecrã de 2024-07-25 15-38-21.png",
@@ -572,8 +558,6 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.var/app/com.stremio.Stremio/config/user-dirs.dirs",
 				"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/config.jsonc",
 				"/home/necrofago/Transferências/dev-environment-files/waybar/.config/waybar/style.css",
-				"/home/necrofago/.config/waybar/colors.css",
-				"/home/necrofago/.config/hypr/colors.lua",
 				"/home/necrofago/.nvidia-settings-rc",
 				"/home/necrofago/PKG/list.txt",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/qt6ct/qt6ct.conf",
@@ -665,30 +649,30 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/necrofago/.zshrc",
+							"file": "/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 10982,
+								"buffer_size": 4790,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										10928,
-										10928
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Zsh.sublime-syntax",
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 6450.0,
+								"translation.y": 1944.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -737,7 +721,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,2550,1389,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,1270,1389,1920,1080,0",
 			"project": "",
 			"replace":
 			{

@@ -60,14 +60,14 @@
 }
 
 #network.ethernet {
-    /*  Ethernet connection – use the “on‑tertiary‑container” colour */
-    color: @on_tertiary_container;
+    /*  Ethernet connection – use the “tertiary” colour */
+    color: lightgreen;
 }
 
 /*  Work‑spaces buttons – normal, empty and urgent */
 #workspaces button {
     padding: 2px 5px;
-    color: @on_tertiary_container;
+    color: @tertiary;
 }
 
 #workspaces button.empty {
@@ -108,7 +108,7 @@
 #pulseaudio-slider highlight {
     min-width: 10px;
     border-radius: 5px;
-    background: @inverse_surface;
+    background: @tertiary;
 }
 
 /*  Updates module – icon padding */
