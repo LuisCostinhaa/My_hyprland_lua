@@ -73,7 +73,7 @@ sudo systemctl start ufw.service
 sudo ufw --force enable
 
 echo -e "${VERDE}[12/16] Instalando AUR...${SEM_COR}"
-yay -S --needed --noconfirm matugen-bin hyprmod waybar-git papirus-folders \
+yay -S --needed --noconfirm matugen-bin waybar-git papirus-folders \
     waypaper-git waybar-module-pacman-updates-git
 
 echo -e "${VERDE}[13/13] Movendo arquivos de configuração e aplicando permissões...${SEM_COR}"
@@ -87,6 +87,7 @@ xdg-user-dirs-update
 [ -d "var" ] && sudo mkdir -p ~/.var && sudo cp -r var/* ~/.var
 [ -d "ly" ] && sudo mkdir -p ~/etc/ly && sudo cp -r ly/* /etc/ly
 [ -f "makepkg.conf" ] && sudo cp makepkg.conf /etc/
+[ -f "pacman.conf" ] && sudo cp pacman.conf /etc/
 [ -f "vconsole.conf" ] && sudo cp vconsole.conf /etc/
 [ -f "grub" ] && sudo cp grub /etc/default/
 
@@ -96,7 +97,6 @@ if [ -d "config" ]; then
     cp -r config/* ~/.config/
 fi
 
-[ -f ".bashrc" ] && cp .bashrc ~
 [ -f ".zshrc" ] && cp .zshrc ~
 [ -f ".zshenv" ] && cp .zshenv ~
 
@@ -108,7 +108,7 @@ if [ -d "My_hyprland_lua" ]; then
 fi
 
 # Ajuste definitivo de permissões na Home do utilizador (remover sudo onde não deve)
-sudo chown -R "${USER}":"${USER}" "$HOME/.bashrc" "$HOME/.zshrc" "$HOME/.config" "$HOME/.var"
+sudo chown -R "${USER}":"${USER}" "$HOME/.zshrc" "$HOME/.config" "$HOME/.var"
 
     #########################   GRUB   ##############################
 echo -e "${VERDE}Atualizando o Grub...${SEM_COR}"

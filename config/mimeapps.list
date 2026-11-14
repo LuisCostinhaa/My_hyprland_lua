@@ -1,0 +1,10 @@
+[Default Applications]
+application/pdf=net.code_industry.MasterPDFEditor.desktop
+image/png=org.gnome.Loupe.desktop
+image/jpeg=org.gnome.Loupe.desktop
+
+[Added Associations]
+application/pdf=net.code_industry.MasterPDFEditor.desktop;
+image/png=org.gnome.Loupe.desktop;
+image/jpeg=org.gnome.Loupe.desktop;
+text/x-shellscript=com.sublimehq.SublimeText.desktop;

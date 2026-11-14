@@ -1,0 +1,4 @@
+lensfun lens database (data/db), commit 43f9e001ab66c4fcdd4f400463f13b72f94b2288
+from https://github.com/lensfun/lensfun, downloaded by LightCraft.
+         Licence: Creative Commons Attribution-ShareAlike 3.0 (https://creativecommons.org/licenses/by-sa/3.0/), by the lensfun contributors.
+         Data only, read by LightCraft at run time; not part of LightCraft.

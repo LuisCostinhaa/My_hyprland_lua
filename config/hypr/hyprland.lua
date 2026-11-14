@@ -23,10 +23,13 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
-    mode     = "3840x2160@60",
-    position = "auto",
-    scale    = "1.5",
+    output = "DP-1",
+    disabled = false,
+    mode = "3840x2160@60.00Hz",
+    position = "0x0",
+    scale = 1.5,
+    bitdepth = 10,
+    cm = "srgb",
 })
 
 
@@ -236,6 +239,13 @@ hl.config({
     },
 })
 
+-- Settings
+hl.config({
+    xwayland = {
+        force_zero_scaling = true,
+    },
+})
+
 ----------------
 ----  MISC  ----
 ----------------
@@ -307,15 +317,14 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind("ALT + T", hl.dsp.exec_cmd(fileManager))
 hl.bind("ALT + L", hl.dsp.exec_cmd("librewolf"))
 hl.bind("ALT + B", hl.dsp.exec_cmd("com.brave.Browser"))
-hl.bind("ALT + D", hl.dsp.exec_cmd("~/AppImages/darktable.appimage"))
-hl.bind("ALT + P", hl.dsp.exec_cmd("~/AppImages/photocraft.appimage"))
+hl.bind("ALT + D", hl.dsp.exec_cmd("org.darktable.Darktable"))
+hl.bind("ALT + P", hl.dsp.exec_cmd("ai.storyteller.photocraft"))
 hl.bind("ALT + W", hl.dsp.exec_cmd("waypaper"))
 hl.bind("ALT + A", hl.dsp.exec_cmd("nwg-look"))
 hl.bind("ALT + S", hl.dsp.exec_cmd("com.sublimehq.SublimeText"))
 hl.bind("ALT + K", hl.dsp.exec_cmd("keepassxc"))
 hl.bind("ALT + space", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + SHIFT + CTRL + Z", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/Qwen3.5-0.8B-Q8_0.llamafile"))
-hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/gpt-oss-20b-Q5_K_S.llamafile"))
+hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd("alacritty -e ~/PKG/Llamafile/Qwen3.5-0.8B-Q8_0.llamafile"))
 hl.bind("Print", hl.dsp.exec_cmd("alacritty -e hyprshot -m window -o ~/Imagens/Screenshot"))
 hl.bind("XF86Tools", hl.dsp.exec_cmd("io.bassi.Amberol"))
 hl.bind("XF86Search", hl.dsp.exec_cmd(menu))
@@ -423,7 +432,6 @@ hl.window_rule({
 hl.window_rule({
     name  = "move-hyprland-run",
     match = { class = "hyprland-run" },
-
     move  = "20 monitor_h-120",
     float = true,
 })
@@ -449,7 +457,3 @@ hl.window_rule({
     match = { title = "^(Renomear.*)$|^(Progresso da operação do ficheiro.*)$" },
     float = true,
 })
-
-
--- HyprMod managed settings
-require("hyprland-gui")

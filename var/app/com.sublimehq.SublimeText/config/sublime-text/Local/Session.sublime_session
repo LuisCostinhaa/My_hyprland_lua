@@ -1,19 +1,35 @@
 {
 	"file_history":
 	[
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
 		"/home/necrofago/.config/hypr/hyprland.lua",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+		"/home/necrofago/.config/user-dirs.locale",
+		"/home/necrofago/.config/user-dirs.dirs",
+		"/home/necrofago/.config/QtProject.conf",
+		"/home/necrofago/.config/mimeapps.list",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshenv",
+		"/home/necrofago/.config/hypr/hyprland-gui.lua",
+		"/run/user/1000/doc/rZjUuegKS_l7CNr_wvoiFQ/org.darktable.Darktable",
+		"/run/user/1000/doc/ztotPe3n4CX3FRbiEYfqXQ/ai.storyteller.photocraft",
+		"/home/necrofago/.cosmo/dlopen-helper.c",
+		"/home/necrofago/.cosmo/dlopen-helper",
+		"/home/necrofago/.zshrc",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/makepkg.conf",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/grub",
+		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/1",
+		"/home/necrofago/PKG/My-Projects/Win_Manager/My_hyprland/pacman.conf",
+		"/etc/makepkg.conf",
 		"/home/necrofago/.config/waybar/colors.css",
 		"/home/necrofago/.config/waybar/style.css",
 		"/home/necrofago/.config/hypr/colors.lua",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 		"/home/necrofago/.bashrc",
-		"/home/necrofago/.zshrc",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 		"/home/necrofago/PKG/base_install/git.txt",
 		"/home/necrofago/.bash_profile",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 		"/home/necrofago/.config/keepassxc/keepassxc.ini",
 		"/home/necrofago/.config/qt6ct/qt6ct.conf",
 		"/home/necrofago/.config/qt5ct/qt5ct.conf",
@@ -38,7 +54,6 @@
 		"/home/necrofago/Imagens/link.txt",
 		"/home/necrofago/Imagens/packages.x86_64",
 		"/home/necrofago/.config/waybar/config.jsonc",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
 		"/home/necrofago/.themes/adw-gtk3-dark/.nwg-look",
 		"/home/necrofago/.config/gtk-4.0/gtk.css",
 		"/home/necrofago/.config/gtk-4.0/settings.ini",
@@ -102,7 +117,6 @@
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/xfce4/xfce4-screenshooter",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/pavucontrol.ini",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/user-dirs.locale",
-		"/home/necrofago/.config/hypr/hyprland-gui.lua",
 		"/home/necrofago/Transferências/Listing/gtk-4.0/gtk.css",
 		"/home/necrofago/Transferências/Listing/gtk-4.0/gtk-dark.css",
 		"/home/necrofago/Transferências/Listing/gtk-4.0/settings.ini",
@@ -114,27 +128,19 @@
 		"/home/necrofago/.var/app/com.sublimehq.SublimeText/config/sublime-text/Packages/User/Eightlime Dark.sublime-theme",
 		"/home/necrofago/PKG/My-Projects/My_hyprland_lua/config/user-dirs.dirs",
 		"/home/necrofago/Transferências/My_hyprland_Lua/copy_files.sh",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/FlatpakInstall.sh",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/install.sh",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/copy_files.sh",
-		"/home/necrofago/.themes/adw-gtk3/gtk-4.0/libadwaita-tweaks.css",
-		"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/PosInstall",
-		"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
-		"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
-		"/home/necrofago/.themes/adw-gtk3/index.theme",
-		"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
+		"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/FlatpakInstall.sh"
 	],
 	"folder_history":
 	[
 	],
 	"last_version": 4215,
-	"last_window_id": 13,
+	"last_window_id": 15,
 	"log_indexing": false,
-	"next_update_check": 1794490217,
+	"next_update_check": 1794749417,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 1393.0,
+		"new_window_height": 1440.0,
 		"new_window_maximized": true,
 		"new_window_position":
 		[
@@ -204,19 +210,33 @@
 			},
 			"file_history":
 			[
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+				"/home/necrofago/.config/user-dirs.locale",
+				"/home/necrofago/.config/user-dirs.dirs",
+				"/home/necrofago/.config/QtProject.conf",
+				"/home/necrofago/.config/mimeapps.list",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshenv",
+				"/run/user/1000/doc/rZjUuegKS_l7CNr_wvoiFQ/org.darktable.Darktable",
+				"/run/user/1000/doc/ztotPe3n4CX3FRbiEYfqXQ/ai.storyteller.photocraft",
+				"/home/necrofago/.cosmo/dlopen-helper.c",
+				"/home/necrofago/.cosmo/dlopen-helper",
+				"/home/necrofago/.zshrc",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/makepkg.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/grub",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/1",
+				"/etc/makepkg.conf",
 				"/home/necrofago/.config/waybar/colors.css",
 				"/home/necrofago/.config/waybar/style.css",
 				"/home/necrofago/.config/hypr/colors.lua",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.bashrc",
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 				"/home/necrofago/PKG/base_install/git.txt",
 				"/home/necrofago/.bash_profile",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/necrofago/.config/keepassxc/keepassxc.ini",
 				"/home/necrofago/.config/qt6ct/qt6ct.conf",
 				"/home/necrofago/.config/qt5ct/qt5ct.conf",
@@ -240,7 +260,6 @@
 				"/home/necrofago/Imagens/link.txt",
 				"/home/necrofago/Imagens/packages.x86_64",
 				"/home/necrofago/.config/waybar/config.jsonc",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
 				"/home/necrofago/.themes/adw-gtk3-dark/.nwg-look",
 				"/home/necrofago/.config/gtk-4.0/gtk.css",
 				"/home/necrofago/.config/gtk-4.0/settings.ini",
@@ -318,8 +337,7 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/PosInstall",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
-				"/home/necrofago/.themes/adw-gtk3/index.theme",
-				"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
+				"/home/necrofago/.themes/adw-gtk3/index.theme"
 			],
 			"find":
 			{
@@ -412,7 +430,7 @@
 			{
 			}
 		},
-		"new_window_width": 1277.0
+		"new_window_width": 2560.0
 	},
 	"windows":
 	[
@@ -437,17 +455,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
-					"file_size": 4810,
-					"file_write_time": 134388795936180984,
-					"settings":
-					{
-						"buffer_size": 4790,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -493,19 +500,33 @@
 			},
 			"file_history":
 			[
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
 				"/home/necrofago/.config/hypr/hyprland.lua",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
+				"/home/necrofago/.config/user-dirs.locale",
+				"/home/necrofago/.config/user-dirs.dirs",
+				"/home/necrofago/.config/QtProject.conf",
+				"/home/necrofago/.config/mimeapps.list",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshenv",
+				"/run/user/1000/doc/rZjUuegKS_l7CNr_wvoiFQ/org.darktable.Darktable",
+				"/run/user/1000/doc/ztotPe3n4CX3FRbiEYfqXQ/ai.storyteller.photocraft",
+				"/home/necrofago/.cosmo/dlopen-helper.c",
+				"/home/necrofago/.cosmo/dlopen-helper",
+				"/home/necrofago/.zshrc",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/makepkg.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/grub",
+				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/1",
+				"/etc/makepkg.conf",
 				"/home/necrofago/.config/waybar/colors.css",
 				"/home/necrofago/.config/waybar/style.css",
 				"/home/necrofago/.config/hypr/colors.lua",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/PosInstall",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/FlatpakInstall.sh",
 				"/home/necrofago/.bashrc",
-				"/home/necrofago/.zshrc",
 				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/.zshrc",
 				"/home/necrofago/PKG/base_install/git.txt",
 				"/home/necrofago/.bash_profile",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/copy_files.sh",
 				"/home/necrofago/.config/keepassxc/keepassxc.ini",
 				"/home/necrofago/.config/qt6ct/qt6ct.conf",
 				"/home/necrofago/.config/qt5ct/qt5ct.conf",
@@ -529,7 +550,6 @@
 				"/home/necrofago/Imagens/link.txt",
 				"/home/necrofago/Imagens/packages.x86_64",
 				"/home/necrofago/.config/waybar/config.jsonc",
-				"/home/necrofago/PKG/My-Projects/My_hyprland_lua/pacman.conf",
 				"/home/necrofago/.themes/adw-gtk3-dark/.nwg-look",
 				"/home/necrofago/.config/gtk-4.0/gtk.css",
 				"/home/necrofago/.config/gtk-4.0/settings.ini",
@@ -607,8 +627,7 @@
 				"/home/necrofago/PKG/My-Projects/My_hyprland_Lua/PosInstall",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk.css",
 				"/home/necrofago/.themes/adw-gtk3/gtk-4.0/gtk-dark.css",
-				"/home/necrofago/.themes/adw-gtk3/index.theme",
-				"/home/necrofago/.themes/Default/gtk-3.0/gtk-keys.css"
+				"/home/necrofago/.themes/adw-gtk3/index.theme"
 			],
 			"find":
 			{
@@ -647,38 +666,6 @@
 				{
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/necrofago/PKG/My-Projects/My_hyprland_lua/install.sh",
-							"selected": true,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4790,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Bash.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1944.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"stack_multiselect": false,
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -721,7 +708,7 @@
 				]
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1270,1389,1920,1080,0",
+			"position": "0,1,0,0,0,0,0,2550,1389,1920,1080,0",
 			"project": "",
 			"replace":
 			{

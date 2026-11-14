@@ -1,0 +1,320 @@
+{
+  "window": {
+    "size": [
+      2550.0,
+      1389.3334
+    ],
+    "zoomed": true
+  },
+  "docking": {
+    "version": 2,
+    "layout": {
+      "root": {
+        "Split": {
+          "axis": "Horizontal",
+          "size": {
+            "FixedSecond": 478.0
+          },
+          "first": {
+            "Split": {
+              "axis": "Horizontal",
+              "size": {
+                "FixedFirst": 268.0
+              },
+              "first": {
+                "Dock": {
+                  "side": "Start",
+                  "columns": [
+                    {
+                      "groups": [
+                        {
+                          "panels": [
+                            "library"
+                          ],
+                          "active": 0,
+                          "minimized": false,
+                          "height": null
+                        }
+                      ],
+                      "width": 268.0,
+                      "iconic": false,
+                      "iconic_width": null
+                    }
+                  ]
+                }
+              },
+              "second": {
+                "Tabs": {
+                  "panels": [
+                    "canvas"
+                  ],
+                  "active": 0
+                }
+              }
+            }
+          },
+          "second": {
+            "Dock": {
+              "side": "End",
+              "columns": [
+                {
+                  "groups": [
+                    {
+                      "panels": [
+                        "tools"
+                      ],
+                      "active": 0,
+                      "minimized": false,
+                      "height": null
+                    }
+                  ],
+                  "width": 478.0,
+                  "iconic": false,
+                  "iconic_width": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "floating": []
+    },
+    "hidden": [
+      [
+        "presets",
+        {
+          "floating": null,
+          "anchor": "tools",
+          "placement": {
+            "Column": {
+              "after": true
+            }
+          },
+          "size": null,
+          "stack": null,
+          "sibling": [],
+          "group": {
+            "minimized": false,
+            "height": null,
+            "column": {
+              "side": "End",
+              "width": 300.0,
+              "iconic": false,
+              "iconic_width": null
+            }
+          }
+        }
+      ]
+    ],
+    "saved": null,
+    "locked": false
+  },
+  "dockingVersion": 1,
+  "language": "en",
+  "view": "detail",
+  "leftPanel": true,
+  "right": "edit",
+  "leftWidth": 268.0,
+  "rightWidth": 478.0,
+  "presets": false,
+  "presetThumbs": false,
+  "filmstrip": true,
+  "zoom": "fit",
+  "pan": [
+    0.5,
+    0.5
+  ],
+  "clickZoom": 100,
+  "beforeAfter": "off",
+  "thumbSize": 220.0,
+  "importThumbSize": 116.0,
+  "openSections": [
+    "optics"
+  ],
+  "openFlyouts": [],
+  "singlePanel": true,
+  "showClipping": false,
+  "histogram": true,
+  "softProof": false,
+  "proof": {
+    "space": "srgb",
+    "destWarning": false,
+    "displayWarning": false
+  },
+  "proofPaperInk": false,
+  "maskOverlay": true,
+  "maskOverlayMode": "color",
+  "maskOverlayColor": [
+    230,
+    30,
+    40
+  ],
+  "maskOverlayOpacity": 50.0,
+  "maskPins": true,
+  "toolOverlay": "auto",
+  "maskOverlayAll": false,
+  "cropOverlayOrient": 0,
+  "cropOverlay": "thirds",
+  "cropDefaultAspect": null,
+  "showFilenames": true,
+  "gridInfo": "filename",
+  "showCounts": true,
+  "faceBoxes": true,
+  "sidebar": [
+    {
+      "id": "albums",
+      "hidden": false,
+      "collapsed": false
+    },
+    {
+      "id": "local",
+      "hidden": false,
+      "collapsed": true
+    },
+    {
+      "id": "byDate",
+      "hidden": false,
+      "collapsed": true
+    },
+    {
+      "id": "folders",
+      "hidden": false,
+      "collapsed": false
+    },
+    {
+      "id": "keywords",
+      "hidden": false,
+      "collapsed": true
+    }
+  ],
+  "hiddenLocations": [],
+  "search": "",
+  "renamingComponent": null,
+  "curveChannel": "master",
+  "mixerMode": "hue",
+  "gradingMode": "3way",
+  "tool": "",
+  "brushSize": 0.04,
+  "brushFeather": 50.0,
+  "brushFlow": 60.0,
+  "brushErase": false,
+  "brushAutoMask": false,
+  "brushPressure": true,
+  "lensBlurBrushAmount": 100.0,
+  "removeSize": 0.02,
+  "removeFeather": 50.0,
+  "removeOpacity": 100.0,
+  "pointColor": 0,
+  "pointColorVisualize": false,
+  "hdrVisualize": false,
+  "eye": 0,
+  "eyePet": false,
+  "visualizeSpots": false,
+  "spotsThreshold": 50.0,
+  "filterBar": false,
+  "localRoots": [],
+  "autoAdvance": false,
+  "fullscreen": false,
+  "secondWindow": false,
+  "keywordingView": "keywords",
+  "foldedSections": [],
+  "keywordListOpen": [],
+  "infoOverlay": "off",
+  "layoutImage": {
+    "path": "",
+    "show": false,
+    "opacity": 1.0,
+    "matte": 0.0
+  },
+  "navigator": true,
+  "settings": {
+    "libraryPath": "/home/necrofago/Imagens/My_LightCraft _Library",
+    "recentLibraries": [
+      "/home/necrofago/Imagens/My_LightCraft _Library",
+      "/home/necrofago/Imagens/LightCraft Library",
+      "/home/necrofago/Imagens/costinhaa-v13-3",
+      "/home/necrofago/Imagens/1/LightCraft Library",
+      "/home/necrofago/Imagens/LightCraft Library/LightCraft Library",
+      "/home/necrofago/Pictures/LightCraft Library"
+    ],
+    "recentLibrariesOpened": {
+      "/home/necrofago/Imagens/1/LightCraft Library": "2026-10-30T21:44:05",
+      "/home/necrofago/Imagens/LightCraft Library": "2026-11-13T22:03:15",
+      "/home/necrofago/Imagens/LightCraft Library/LightCraft Library": "2026-10-30T21:41:13",
+      "/home/necrofago/Imagens/My_LightCraft _Library": "2026-11-13T22:05:52",
+      "/home/necrofago/Imagens/costinhaa-v13-3": "2026-11-13T21:51:38",
+      "/home/necrofago/Pictures/LightCraft Library": "2026-10-30T21:37:02"
+    },
+    "atLaunch": "last",
+    "startupView": "last",
+    "askBeforeDelete": true,
+    "askBeforeMove": true,
+    "closeDialogsOutside": false,
+    "importDroppedDirectly": false,
+    "gpu": true,
+    "composeWindow": false,
+    "previewLimit": 0,
+    "externalEditor": "",
+    "externalFile": {
+      "format": "tiff",
+      "colorSpace": "adobeRgb",
+      "bitDepth": 16
+    },
+    "photocraftPath": "/home/necrofago/AppImages/photocraft.appimage",
+    "photocraftFile": {
+      "format": "psd",
+      "colorSpace": "proPhoto",
+      "bitDepth": 16
+    },
+    "memoryMb": 0,
+    "hotPixelLimit": 0.2,
+    "infoSelectedPhotos": true,
+    "filmNames": true,
+    "filmBadges": true,
+    "gridBadges": "auto",
+    "loupeMessages": true,
+    "backgroundPrep": {
+      "culling": {
+        "previews": true,
+        "ahead": 5,
+        "eyeAhead": 8,
+        "scope": "all"
+      },
+      "library": {
+        "previews": true,
+        "ahead": 5,
+        "eyeAhead": 8,
+        "scope": "all"
+      },
+      "develop": {
+        "ahead": 2,
+        "scope": "all"
+      }
+    },
+    "keymap": {},
+    "appearanceMode": "dark",
+    "darkTheme": "charcoal",
+    "lightTheme": "silver",
+    "favoriteThemes": [],
+    "displayProfile": "",
+    "keywordChips": "paths",
+    "focusPoint": false,
+    "zoomToFocus": true,
+    "loupeInfo": {
+      "info1": [
+        "fileName",
+        "captureDate",
+        "dimensions"
+      ],
+      "info2": [
+        "fileName",
+        "exposure",
+        "cameraAndLens"
+      ],
+      "briefly": "off"
+    },
+    "lightroomImport": "ask",
+    "lensDatabase": "accepted"
+  },
+  "seenVersion": "0.21.1"
+}

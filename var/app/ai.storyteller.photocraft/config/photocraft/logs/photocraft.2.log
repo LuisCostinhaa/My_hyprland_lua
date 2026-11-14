@@ -1,0 +1,8 @@
+2026-11-13T15:00:15.947Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
+2026-11-13T15:00:15.947Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
+2026-11-13T15:00:15.956Z INFO  [main] photocraft: presentation: autovsync, latency 1
+2026-11-13T15:00:15.956Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (3.09 ms)
+2026-11-13T15:00:16.167Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
+2026-11-13T15:00:16.169Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
+2026-11-13T15:00:16.232Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
+2026-11-13T15:00:16.233Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))

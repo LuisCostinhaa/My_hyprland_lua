@@ -1,0 +1,8 @@
+2026-11-13T21:51:05.621Z INFO  [main] lightcraft: LightCraft 0.21.1, log file /home/necrofago/.var/app/ai.storyteller.lightcraft/config/lightcraft/logs/lightcraft.log
+2026-11-13T21:51:05.621Z INFO  [main] lightcraft::window_gpu: window: renderer wgpu (order ["vulkan", "gl", "glow"])
+2026-11-13T21:51:05.873Z ERROR [main] lightcraft::session: library /home/necrofago/Imagens/costinhaa-v13-3 can't be opened: The library isn't there: it was moved or renamed, or its drive or network share isn't connected.
+2026-11-13T21:51:05.873Z INFO  [main] lightcraft::hdr_display: display: SDR (the window surface is 8-bit)
+2026-11-13T21:51:05.894Z INFO  [lc-gpu-window] lightcraft_gpu::ctx: gpu: NVIDIA GeForce GTX 1660 SUPER (Vulkan), 50 kernels in 18 ms, buffers ≤ 2047 MiB, the window's device
+2026-11-13T21:51:05.895Z INFO  [lc-gpu-window] lightcraft: gpu: rendering on the window's device
+2026-11-13T21:51:05.930Z INFO  [main] lightcraft_engine::lens_profiles: lens database: 56 files, 1568 profiles
+2026-11-13T21:51:05.930Z INFO  [main] lightcraft_engine::lens_profiles: lens database: read /home/necrofago/.var/app/ai.storyteller.lightcraft/config/lightcraft/lensfun (downloaded): lenses 1568, cameras 1057

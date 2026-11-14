@@ -35,7 +35,6 @@ echo "→  Copying your personal shell & misc files..."
 declare -a USER_FILES=(
     ".zshrc"
     ".zshenv"
-    ".bashrc"
     "Imagens/backgrounds"   # <-- your custom folder
 )
 
@@ -121,7 +120,10 @@ echo "→  Copying selected folders from ~/.var …"
 
 # The folders you actually want to back up – feel free to add/remove
 declare -a CFG_FOLDERS=(
+    "ai.storyteller.lightcraft"
+    "ai.storyteller.photocraft"
     "com.sublimehq.SublimeText"
+    "io.missioncenter.MissionCenter"
 )
 
 # Create destination sub‑folders first (so `rsync` can use them)
@@ -139,6 +141,7 @@ done
 echo "→  Copying any extra files from ~/.config …"
 
 declare -a EXTRA_FILES=(
+    "mimeapps.list"
     "pavucontrol.ini"
     "user-dirs.locale"
 )

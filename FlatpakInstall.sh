@@ -28,15 +28,16 @@ APPLICATIONS=(
     "com.stremio.Stremio"
     "org.gnome.Loupe"
     "com.sublimehq.SublimeText"
-    "com.transmissionbt.Transmission"
+    #"com.transmissionbt.Transmission"
     "io.missioncenter.MissionCenter"
     "org.gnome.Calculator"
     "org.gnome.Calendar"
     "org.gnome.clocks"
     "io.bassi.Amberol"
     "org.pulseaudio.pavucontrol"
-    "it.mijorus.gearlever"
+    #"it.mijorus.gearlever"
     "com.brave.Browser"
+    "org.darktable.Darktable"
 )
 
 # --------------------------------------------
