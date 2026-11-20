@@ -13,7 +13,7 @@
         "Split": {
           "axis": "Horizontal",
           "size": {
-            "FixedSecond": 478.0
+            "FixedSecond": 319.6328
           },
           "first": {
             "Split": {
@@ -68,7 +68,7 @@
                       "height": null
                     }
                   ],
-                  "width": 478.0,
+                  "width": 319.6328,
                   "iconic": false,
                   "iconic_width": null
                 }
@@ -115,10 +115,10 @@
   "leftPanel": true,
   "right": "edit",
   "leftWidth": 268.0,
-  "rightWidth": 478.0,
+  "rightWidth": 319.6328,
   "presets": false,
   "presetThumbs": false,
-  "filmstrip": true,
+  "filmstrip": false,
   "zoom": "fit",
   "pan": [
     0.5,
@@ -129,9 +129,11 @@
   "thumbSize": 220.0,
   "importThumbSize": 116.0,
   "openSections": [
-    "optics"
+    "color"
   ],
-  "openFlyouts": [],
+  "openFlyouts": [
+    "curve"
+  ],
   "singlePanel": true,
   "showClipping": false,
   "histogram": true,
@@ -159,17 +161,17 @@
   "showFilenames": true,
   "gridInfo": "filename",
   "showCounts": true,
-  "faceBoxes": true,
+  "faceBoxes": false,
   "sidebar": [
     {
       "id": "albums",
       "hidden": false,
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "local",
       "hidden": false,
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "byDate",
@@ -187,7 +189,10 @@
       "collapsed": true
     }
   ],
-  "hiddenLocations": [],
+  "hiddenLocations": [
+    "/home/necrofago",
+    "/run/user/1000/doc/adROSUoobdO4TAt2uCAbQQ/Imagens"
+  ],
   "search": "",
   "renamingComponent": null,
   "curveChannel": "master",
@@ -212,7 +217,11 @@
   "visualizeSpots": false,
   "spotsThreshold": 50.0,
   "filterBar": false,
-  "localRoots": [],
+  "localRoots": [
+    "/run/user/1000/doc/adROSUoobdO4TAt2uCAbQQ/Imagens",
+    "/run/user/1000/doc/nCpQi509HDN0WQSg5t01gA/Imagens",
+    "/home/necrofago/Imagens/FUJI"
+  ],
   "autoAdvance": false,
   "fullscreen": false,
   "secondWindow": false,
@@ -228,8 +237,9 @@
   },
   "navigator": true,
   "settings": {
-    "libraryPath": "/home/necrofago/Imagens/My_LightCraft _Library",
+    "libraryPath": "/home/necrofago/Imagens/My_LightCraft_Library",
     "recentLibraries": [
+      "/home/necrofago/Imagens/My_LightCraft_Library",
       "/home/necrofago/Imagens/My_LightCraft _Library",
       "/home/necrofago/Imagens/LightCraft Library",
       "/home/necrofago/Imagens/costinhaa-v13-3",
@@ -241,7 +251,8 @@
       "/home/necrofago/Imagens/1/LightCraft Library": "2026-10-30T21:44:05",
       "/home/necrofago/Imagens/LightCraft Library": "2026-11-13T22:03:15",
       "/home/necrofago/Imagens/LightCraft Library/LightCraft Library": "2026-10-30T21:41:13",
-      "/home/necrofago/Imagens/My_LightCraft _Library": "2026-11-13T22:05:52",
+      "/home/necrofago/Imagens/My_LightCraft _Library": "2026-11-14T20:55:33",
+      "/home/necrofago/Imagens/My_LightCraft_Library": "2026-11-15T16:37:50",
       "/home/necrofago/Imagens/costinhaa-v13-3": "2026-11-13T21:51:38",
       "/home/necrofago/Pictures/LightCraft Library": "2026-10-30T21:37:02"
     },
@@ -260,9 +271,9 @@
       "colorSpace": "adobeRgb",
       "bitDepth": 16
     },
-    "photocraftPath": "/home/necrofago/AppImages/photocraft.appimage",
+    "photocraftPath": "/home/necrofago/.local/share/applications/Photocraft.desktop",
     "photocraftFile": {
-      "format": "psd",
+      "format": "tiff",
       "colorSpace": "proPhoto",
       "bitDepth": 16
     },

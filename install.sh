@@ -31,8 +31,13 @@ echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
     bash-completion mesa-utils mtools linux-headers nano rsync \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs swaync \
-    polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs \
-    cuda cudnn opencl-nvidia nvidia-open-dkms nvidia-settings nvidia-utils
+    polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs 
+
+echo -e "${VERDE}[12/16] Instalando AUR...${SEM_COR}"
+yay -S --needed --noconfirm opencl-nvidia-580xx nvidia-580xx-dkms nvidia-580xx-settings nvidia-580xx-utils \
+    matugen-bin waybar-git papirus-folders \
+    waypaper-git waybar-module-pacman-updates-git \
+    cuda cudnn 
 
 echo -e "${VERDE}[4/13] Instalando Hyprland...${SEM_COR}"
 sudo pacman  -S --needed --noconfirm \
@@ -71,10 +76,6 @@ sudo systemctl enable --now fstrim.timer
 sudo systemctl enable ufw.service
 sudo systemctl start ufw.service
 sudo ufw --force enable
-
-echo -e "${VERDE}[12/16] Instalando AUR...${SEM_COR}"
-yay -S --needed --noconfirm matugen-bin waybar-git papirus-folders \
-    waypaper-git waybar-module-pacman-updates-git
 
 echo -e "${VERDE}[13/13] Movendo arquivos de configuração e aplicando permissões...${SEM_COR}"
 
@@ -117,7 +118,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
     #########################   ZSH   ##############################
 echo -e "${VERDE}Configurando o ZSH como shell padrão...${SEM_COR}"
 sudo chsh -s /bin/zsh root
-sudo chsh -s /bin/zsh "${MYHOSTNM}"
+sudo chsh -s /bin/zsh $USER
 
     #########################   Fim   ##############################
 echo -e "${VERDE}Configuração concluída com sucesso!${SEM_COR}"

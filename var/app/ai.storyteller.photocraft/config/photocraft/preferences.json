@@ -42,7 +42,21 @@
     "showCrosshairInBrushTip": false,
     "showOnlyCrosshairWhilePainting": false
   },
-  "dialogs": {},
+  "dialogs": {
+    "filter.cameraRaw.scope": {
+      "floating": false,
+      "floatingRect": null,
+      "hideSkinLine": false,
+      "highlights": false,
+      "lab": false,
+      "redRight": false,
+      "samplerTool": false,
+      "samplers": [],
+      "selectedRegion": false,
+      "shadows": false,
+      "vectorscope": false
+    }
+  },
   "enhancedControls": {
     "rotateViewWithTrackpad": false,
     "scrubbySliderAcceleration": true,
@@ -53,7 +67,7 @@
     "convertToSrgb": true,
     "jpegQuality": 85,
     "metadata": "copyright",
-    "quickExportFormat": "png",
+    "quickExportFormat": "jpg",
     "quickExportLocation": "ask",
     "webpLossless": true,
     "webpQuality": 85
@@ -73,7 +87,7 @@
     "rasterizeSvgGroupsDeeperThan": 100,
     "recentFileCount": 20,
     "recentFiles": [
-      "/home/necrofago/Imagens/backgrounds/wallhaven-v9owd3.jpg"
+      "/run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.RAF"
     ],
     "recoverOnLaunch": true,
     "saveInBackground": true
@@ -111,7 +125,7 @@
   "historyLog": {
     "destination": "metadata",
     "detail": "concise",
-    "enabled": false,
+    "enabled": true,
     "filePath": ""
   },
   "historyOptions": {
@@ -147,7 +161,7 @@
     "showTooltips": true,
     "systemTitleBar": false,
     "theme": "proMedium",
-    "uiFontSize": "medium",
+    "uiFontSize": "large",
     "uiScale": "auto"
   },
   "lastBrush": null,
@@ -11391,7 +11405,7 @@
   "rawDefaults": {
     "applyAutoTone": false,
     "bitDepth": "16",
-    "colorSpace": "adobeRgb",
+    "colorSpace": "proPhoto",
     "demosaic": "ahd",
     "openAsSmartObject": false,
     "openInCameraRaw": true,
