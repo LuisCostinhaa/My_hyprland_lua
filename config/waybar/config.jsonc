@@ -146,19 +146,6 @@
         ]
     },
 
-    /* Updates – shows whether a package list has changes */
-    "custom/updates": {
-        "format": " {} {icon}",
-        "return-type": "json",
-        "on-click": "~/.config/waybar/update_system.sh",
-        "format-icons": {
-            "has-updates": "   ",
-            "updated": " 󰂪  "
-        },
-        "exec-if": "which waybar-module-pacman-updates",
-        "exec": "waybar-module-pacman-updates --interval-seconds 15 --network-interval-seconds 300"
-    },
-
     /* Launcher – quick‑start for your favourite apps */
     "custom/launcher": {
         "format": "   ",

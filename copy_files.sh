@@ -88,7 +88,6 @@ declare -a CFG_FOLDERS=(
     "gtk-3.0"
     "hypr"
     "keepassxc"
-    "kitty"
     "matugen"
     "nwg-look"
     "pulse"

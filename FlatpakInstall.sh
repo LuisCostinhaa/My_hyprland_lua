@@ -24,11 +24,12 @@ echo "Iniciando a instalação das aplicações..."
 # --------------------------------------------
 APPLICATIONS=(
     "net.code_industry.MasterPDFEditor"
-    "org.libreoffice.LibreOffice"
+    #"org.libreoffice.LibreOffice"
     "com.stremio.Stremio"
     "org.gnome.Loupe"
     "com.sublimehq.SublimeText"
     #"com.transmissionbt.Transmission"
+    "org.freefilesync.FreeFileSync"
     "io.missioncenter.MissionCenter"
     "org.gnome.Calculator"
     "org.gnome.Calendar"

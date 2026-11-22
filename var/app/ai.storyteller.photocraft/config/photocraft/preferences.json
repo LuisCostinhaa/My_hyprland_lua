@@ -43,6 +43,22 @@
     "showOnlyCrosshairWhilePainting": false
   },
   "dialogs": {
+    "file.export.exportAs": {
+      "embedProfile": true,
+      "format": "jpg",
+      "height": 2160.0,
+      "lockAspect": true,
+      "lossless": true,
+      "metadata": "none",
+      "profile": "srgb",
+      "quality": 90.0,
+      "resample": "bicubicAutomatic",
+      "scale": 96.0,
+      "sizing": "pixels",
+      "tgaBits": "auto",
+      "transparency": true,
+      "width": 3840.0
+    },
     "filter.cameraRaw.scope": {
       "floating": false,
       "floatingRect": null,
@@ -66,6 +82,7 @@
   "export": {
     "convertToSrgb": true,
     "jpegQuality": 85,
+    "lastFolder": "/home/necrofago/Imagens/backgrounds",
     "metadata": "copyright",
     "quickExportFormat": "jpg",
     "quickExportLocation": "ask",
@@ -87,6 +104,11 @@
     "rasterizeSvgGroupsDeeperThan": 100,
     "recentFileCount": 20,
     "recentFiles": [
+      "/home/necrofago/Imagens/backgrounds/wallhaven-zp2mlv.jpg",
+      "/home/necrofago/Imagens/backgrounds/pexels-40896.jpg",
+      "/home/necrofago/Imagens/backgrounds/p9kwgj.png",
+      "/home/necrofago/Imagens/backgrounds/everforest.jpg",
+      "/home/necrofago/Imagens/backgrounds/wallhaven-d82dpj.jpg",
       "/run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.RAF"
     ],
     "recoverOnLaunch": true,
@@ -107,6 +129,7 @@
     "zoomWithScrollWheel": false
   },
   "groupTools": [
+    "Crop",
     "Hand",
     "Move"
   ],
@@ -11427,12 +11450,16 @@
     "bindings": [],
     "enabled": false
   },
-  "selectedTool": "Hand",
+  "selectedTool": "Crop",
   "shortcutSet": "",
   "shortcutSets": {},
   "shortcuts": {},
   "toolBrushes": null,
-  "toolOptions": null,
+  "toolOptions": {
+    "crop_custom_ratio_height": 9.0,
+    "crop_custom_ratio_width": 16.0,
+    "crop_ratio": "16:9"
+  },
   "toolbar": {
     "hidden": [],
     "order": []

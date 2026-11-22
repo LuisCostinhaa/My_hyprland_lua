@@ -29,14 +29,13 @@ fi
 
 echo -e "${VERDE}[3/13] Instalando Base...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    bash-completion mesa-utils mtools linux-headers nano rsync \
+    bash-completion mtools linux-headers nano rsync \
     dash lsd ntfs-3g gvfs 7zip jq unzip gvfs-mtp xdg-user-dirs swaync \
     polkit-gnome udiskie sg3_utils smartmontools efitools ntfsprogs 
 
 echo -e "${VERDE}[12/16] Instalando AUR...${SEM_COR}"
-yay -S --needed --noconfirm opencl-nvidia-580xx nvidia-580xx-dkms nvidia-580xx-settings nvidia-580xx-utils \
-    matugen-bin waybar-git papirus-folders \
-    waypaper-git waybar-module-pacman-updates-git \
+yay -S --needed --noconfirm nvidia-580xx-dkms nvidia-580xx-utils nvidia-580xx-settings opencl-nvidia-580xx \
+    matugen-bin waybar papirus-folders waypaper-git \
     cuda cudnn 
 
 echo -e "${VERDE}[4/13] Instalando Hyprland...${SEM_COR}"
@@ -67,8 +66,8 @@ sudo pacman -S --needed --noconfirm \
 
 echo -e "${VERDE}[10/13] Instalando Apps (Parte 1)...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
-    gnome-disk-utility xarchiver meld alacritty kitty fastfetch ufw ly cmatrix \
-    btop librewolf keepassxc solaar android-file-transfer flatpak rofi awww
+    gnome-disk-utility xarchiver meld alacritty fastfetch ufw ly cmatrix \
+    btop firefox keepassxc solaar android-file-transfer flatpak rofi awww
 
 echo -e "${VERDE}[11/13] Enable Service...${SEM_COR}"
 sudo systemctl enable ly@tty1.service

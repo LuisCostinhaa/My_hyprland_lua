@@ -30,8 +30,7 @@
 #memory,
 #network,
 #custom-launcher,
-#volume,
-#custom-updates {
+#volume {
     /*  All modules share the same background */
     background: @background;
     /*  A tiny bit of padding to keep the text centred */
@@ -42,7 +41,7 @@
     margin-right: 3px;
     margin-bottom: 0px;
     /*  Rounded corners */
-    border-radius: 5px;
+    border-radius: 7px;
     /*  A 2 px solid border using the “inverse‑primary” colour */
     border: 2px solid @inverse_primary;
 }
@@ -110,12 +109,6 @@
     border-radius: 5px;
     background: @tertiary;
 }
-
-/*  Updates module – icon padding */
-#custom-updates {
-    padding-right: 0px;
-}
-
 /*  Workspaces – the container that Waybar creates for the work‑spaces list */
 #workspaces {
     /*  If you want to change the spacing between the buttons you can do it here */
