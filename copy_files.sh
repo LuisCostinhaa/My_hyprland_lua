@@ -122,7 +122,6 @@ declare -a CFG_FOLDERS=(
     "ai.storyteller.lightcraft"
     "ai.storyteller.photocraft"
     "com.sublimehq.SublimeText"
-    "io.missioncenter.MissionCenter"
 )
 
 # Create destination sub‑folders first (so `rsync` can use them)
