@@ -38,7 +38,7 @@ APPLICATIONS=(
     "org.pulseaudio.pavucontrol"
     #"it.mijorus.gearlever"
     "com.brave.Browser"
-    "org.darktable.Darktable"
+    #"org.darktable.Darktable"
 )
 
 # --------------------------------------------
