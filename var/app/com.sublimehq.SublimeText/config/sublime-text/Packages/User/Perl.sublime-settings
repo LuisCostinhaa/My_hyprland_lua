@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+		"PosInstall",
+		"conf",
+		"ini",
+		"rasi",
+		"grub",
+	],
+}

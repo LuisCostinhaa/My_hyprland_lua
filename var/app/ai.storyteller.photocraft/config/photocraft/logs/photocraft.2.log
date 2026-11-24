@@ -1,0 +1,17 @@
+2026-11-15T20:23:40.069Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
+2026-11-15T20:23:40.069Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
+2026-11-15T20:23:40.080Z INFO  [main] photocraft: presentation: autovsync, latency 1
+2026-11-15T20:23:40.080Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (3.15 ms)
+2026-11-15T20:23:40.278Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
+2026-11-15T20:23:40.280Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
+2026-11-15T20:23:40.291Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
+2026-11-15T20:23:40.292Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))
+2026-11-15T20:26:59.962Z WARN  [main] photocraft_ui_egui::dialogs::camera_raw_ui::sidecar: /run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.xmp: not a readable sidecar of at most 4194304 bytes, ignored
+2026-11-15T20:27:00.091Z WARN  [main] photocraft_ui_egui::dialogs::camera_raw_ui::sidecar: /run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.xmp: not a readable sidecar of at most 4194304 bytes, ignored
+2026-11-15T20:27:00.444Z WARN  [main] winit::platform_impl::linux::wayland::window: Unminimizing is ignored on Wayland.
+2026-11-15T20:27:00.444Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 482.5 ms on the gpu path: input 6.9, command 0.3 (document.move), damage 0.1, composite 103.7, upload 0.0, gpu 6.6, present 0.6; refresh gpu-full 24000000 px
+2026-11-15T20:28:12.352Z WARN  [main] photocraft_ui_egui::dialogs::camera_raw_ui::sidecar: /run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.xmp: not a readable sidecar of at most 4194304 bytes, ignored
+2026-11-15T20:28:12.483Z WARN  [main] photocraft_ui_egui::dialogs::camera_raw_ui::sidecar: /run/user/1000/doc/zQaauHuopJ2p851wMW2IWQ/LMPC0368.xmp: not a readable sidecar of at most 4194304 bytes, ignored
+2026-11-15T20:28:12.816Z WARN  [main] winit::platform_impl::linux::wayland::window: Unminimizing is ignored on Wayland.
+2026-11-15T20:28:12.816Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 465.2 ms on the gpu path: input 6.7, command 0.0, damage 0.0, composite 118.3, upload 0.0, gpu 65.4, present 0.6; refresh gpu-full 24000000 px
+2026-11-15T20:28:13.938Z WARN  [main] winit::platform_impl::linux::wayland::window: Unminimizing is ignored on Wayland.

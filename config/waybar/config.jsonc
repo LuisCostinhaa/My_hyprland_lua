@@ -1,0 +1,155 @@
+
+{
+    /* ------------------------------------------------------------------ */
+    /* Global Waybar options – these apply to the whole bar                  */
+    /* ------------------------------------------------------------------ */
+    "reload_style_on_change": true,
+    "layer": "top",
+    "position": "top",
+    "height": 25,
+
+    /* ------------------------------------------------------------------ */
+    /* Modules that appear on the left side of the bar                     */
+    /* ------------------------------------------------------------------ */
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+
+    /* ------------------------------------------------------------------ */
+    /* Modules that appear in the centre – leave empty if you don’t need it */
+    /* ------------------------------------------------------------------ */
+    "modules-center": [],
+
+    /* ------------------------------------------------------------------ */
+    /* Modules that appear on the right side of the bar                    */
+    /* ------------------------------------------------------------------ */
+    "modules-right": [
+        "network",
+        "custom/updates",
+        "memory",
+        "cpu",
+        "group/volume",
+        "clock#date",
+        "clock#time"
+    ],
+
+    /* ------------------------------------------------------------------ */
+    /* Individual module definitions                                      */
+    /* ------------------------------------------------------------------ */
+
+    /* Memory – shows the percentage used and opens htop when clicked */
+    "memory": {
+        "interval": 30,
+        "format": "   {percentage}% ",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
+        "on-click": "io.missioncenter.MissionCenter"
+    },
+
+    /* Clock – time */
+    "clock#time": {
+        "interval": 60,
+        "format": "   {:%H:%M} ",
+        "tooltip": false,
+        "on-click": "org.gnome.clocks"
+    },
+
+    /* Clock – date */
+    "clock#date": {
+        "interval": 60,
+        "format": "   {:%e %b %Y} ",
+        "tooltip-format": "{:%e %B %Y}",
+        "on-click": "org.gnome.Calendar"
+    },
+
+    /* CPU – shows load with colour thresholds and opens btop */
+    "cpu": {
+        "interval": 9,
+        "format": "    {}% ",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
+        "on-click": "kitty -e sh -c btop"
+    },
+
+    /* Network – Wi‑Fi & Ethernet, with simple colour coding */
+    "network": {
+        "interface": "enp34s0",
+        "format": "     ",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "    on  ",
+        "format-disconnected": "    of  ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "interval": 15
+    },
+
+    /* Hyprland – window title (truncated to keep the bar tidy) */
+    "hyprland/window": {
+        "format": " {} ",
+        "max-length": 200
+    },
+
+    /* Hyprland – work‑spaces list */
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "disable-scroll": true,
+        "on-click": "activate",
+        "format": "{icon} {name}",
+        "format-icons": {
+            "urgent": " ",
+            "active": " ",
+            "default": " "
+        },
+        "icon-size": 10,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": []
+        }
+    },
+
+    /* PulseAudio – volume level */
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": " {icon}  {volume}% ",
+        "format-muted": "    0%  ",
+        "format-icons": {
+            "default": [ " ", " "]
+        },
+        "on-click": "org.pulseaudio.pavucontrol",
+        "on-click-right": "pamixer -t"
+    },
+
+    /* PulseAudio – volume slider (used inside the group) */
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+
+    /* Group – volume: icon + slider */
+    "group/volume": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    },
+
+    /* Launcher – quick‑start for your favourite apps */
+    "custom/launcher": {
+        "format": "   ",
+        "on-click": "pkill rofi || .config/rofi/launchers/launcher.sh",
+        "tooltip": false
+    }
+}
