@@ -13,7 +13,7 @@
     /*  The bar is transparent so you can see your desktop background. */
     background: transparent;
     /*  Font family + size – keep the same as your config.jsonc */
-    font-family: JetBrainsMono Nerd Font, monospace;
+    font-family: JetBrainsMono Nerd Font;
     font-weight: 500;
     font-size: 14px;
     /*  Text colour – the “primary” colour of your palette */

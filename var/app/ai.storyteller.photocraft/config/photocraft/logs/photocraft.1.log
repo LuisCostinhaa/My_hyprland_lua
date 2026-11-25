@@ -1,13 +1,8 @@
-2026-11-20T22:32:55.685Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
-2026-11-20T22:32:55.685Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
-2026-11-20T22:32:55.717Z INFO  [main] photocraft: presentation: autovsync, latency 1
-2026-11-20T22:32:55.717Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (4.06 ms)
-2026-11-20T22:32:56.099Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
-2026-11-20T22:32:56.102Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
-2026-11-20T22:32:56.180Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
-2026-11-20T22:32:56.184Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))
-2026-11-20T22:32:56.352Z INFO  [main] photocraft_ui_egui::render_path: render path: wallhaven-d82dpj.jpg: CPU (compositorBuilding: The GPU compositor is still being prepared)
-2026-11-20T22:32:56.484Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 131.1 ms on the cpu path: input 0.1, command 0.0, damage 0.0, composite 131.0, upload 0.0, gpu -, present 1.9; refresh background 19961856 px
-2026-11-20T22:32:56.768Z INFO  [main] photocraft_ui_egui::render_path: render path: wallhaven-d82dpj.jpg: back on the GPU
-2026-11-20T22:33:40.360Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 109.7 ms on the gpu path: input 0.4, command 63.2 (image.crop), damage 0.0, composite 43.9, upload 0.0, gpu 7.4, present 1.0; refresh gpu-full 16842816 px (1 more slow frames)
-2026-11-20T22:35:07.852Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 703.3 ms on the gpu path: input 702.0, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 48.8, present 0.7; refresh none 0 px
+2026-11-24T22:52:11.350Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
+2026-11-24T22:52:11.350Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
+2026-11-24T22:52:11.373Z INFO  [main] photocraft: presentation: autovsync, latency 1
+2026-11-24T22:52:11.373Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (3.21 ms)
+2026-11-24T22:52:11.604Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
+2026-11-24T22:52:11.607Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
+2026-11-24T22:52:11.690Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
+2026-11-24T22:52:11.693Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))

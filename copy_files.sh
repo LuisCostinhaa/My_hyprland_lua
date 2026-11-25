@@ -98,6 +98,7 @@ declare -a CFG_FOLDERS=(
     "swaync"
     "Thunar"
     "waybar"
+    "kitty"
     "xfce4"
     "xsettingsd"
     "waypaper"

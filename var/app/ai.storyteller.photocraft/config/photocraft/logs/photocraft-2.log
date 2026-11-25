@@ -1,3 +1,0 @@
-2026-11-20T22:43:34.240Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
-2026-11-20T22:43:34.241Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft-2.log
-2026-11-20T22:43:34.493Z INFO  [main] photocraft: handed 1 file(s) to the running PhotoCraft

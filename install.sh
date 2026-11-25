@@ -81,7 +81,7 @@ sudo pacman -S --needed --noconfirm \
 echo -e "${VERDE}[13/15] Instalando Apps (Parte 1)...${SEM_COR}"
 sudo pacman -S --needed --noconfirm \
     gnome-disk-utility xarchiver meld alacritty fastfetch ufw ly cmatrix \
-    btop firefox keepassxc android-file-transfer flatpak rofi awww
+    btop firefox keepassxc android-file-transfer flatpak rofi awww kitty
 
 echo -e "${VERDE}[14/15] Enable Service...${SEM_COR}"
 sudo systemctl enable ly@tty1.service

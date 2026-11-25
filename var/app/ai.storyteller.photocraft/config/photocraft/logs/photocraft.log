@@ -1,23 +1,8 @@
-2026-11-20T22:37:52.608Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
-2026-11-20T22:37:52.608Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
-2026-11-20T22:37:52.621Z INFO  [main] photocraft: presentation: autovsync, latency 1
-2026-11-20T22:37:52.621Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (3.45 ms)
-2026-11-20T22:37:52.870Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
-2026-11-20T22:37:52.873Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
-2026-11-20T22:37:52.884Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
-2026-11-20T22:37:52.885Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))
-2026-11-20T22:37:53.027Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 86.7 ms on the gpu path: input 0.6, command 0.3 (document.move), damage 0.0, composite 38.1, upload 0.0, gpu -, present 0.7; refresh gpu-full 12212224 px
-2026-11-20T22:38:46.597Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 80.0 ms on the gpu path: input 0.3, command 37.4 (image.crop), damage 0.0, composite 40.2, upload 0.0, gpu 2.8, present 1.4; refresh gpu-full 10342656 px
-2026-11-20T22:39:04.736Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 55.0 ms on the gpu path: input 0.1, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 60.7, present 1.1; refresh none 0 px
-2026-11-20T22:39:24.436Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 530.0 ms on the gpu path: input 528.7, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 60.7, present 1.1; refresh none 0 px
-2026-11-20T22:40:12.886Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 67.7 ms on the gpu path: input 0.0, command 0.6 (document.move), damage 0.0, composite 40.1, upload 0.0, gpu 60.7, present 1.2; refresh gpu-full 6266880 px
-2026-11-20T22:40:46.978Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 62.5 ms on the gpu path: input 0.1, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 13.7, present 0.9; refresh none 0 px
-2026-11-20T22:41:06.256Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 504.6 ms on the gpu path: input 503.2, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 13.7, present 0.8; refresh none 0 px
-2026-11-20T22:41:36.993Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 108.6 ms on the gpu path: input 0.0, command 0.7 (document.move), damage 0.1, composite 60.1, upload 0.0, gpu 13.7, present 0.9; refresh gpu-full 15054336 px
-2026-11-20T22:42:16.329Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 66.9 ms on the gpu path: input 0.3, command 46.2 (image.crop), damage 0.1, composite 18.6, upload 0.0, gpu 58.2, present 0.9; refresh gpu-full 12702096 px
-2026-11-20T22:42:22.523Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 112.8 ms on the gpu path: input 0.1, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 3.3, present 0.9; refresh none 0 px
-2026-11-20T22:43:37.738Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 113.5 ms on the gpu path: input 0.0, command 0.7 (document.move), damage 0.0, composite 70.5, upload 0.0, gpu 3.3, present 1.1; refresh gpu-full 10664000 px
-2026-11-20T22:45:58.176Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 64.4 ms on the gpu path: input 0.3, command 30.6 (image.crop), damage 0.0, composite 32.0, upload 0.0, gpu 26.1, present 1.1; refresh gpu-full 9000000 px
-2026-11-20T22:46:07.744Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 83.8 ms on the gpu path: input 0.1, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 67.9, present 0.8; refresh none 0 px
-2026-11-20T22:46:22.285Z INFO  [main] photocraft_ui_egui::frame_stages: slow frame: 569.2 ms on the gpu path: input 567.7, command 0.0, damage 0.0, composite 0.0, upload 0.0, gpu 67.9, present 1.0; refresh none 0 px
-2026-11-20T23:29:57.394Z ERROR [main] winit::platform_impl::linux::wayland::event_loop: Error dispatching event loop: other error during loop operation
+2026-11-25T21:59:41.811Z INFO  [main] photocraft::app_dirs: settings directory (Platform): Some("/home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft")
+2026-11-25T21:59:41.811Z INFO  [main] photocraft: PhotoCraft 0.23.1 (45066c482, 2026-11-12), log file /home/necrofago/.var/app/ai.storyteller.photocraft/config/photocraft/logs/photocraft.log
+2026-11-25T21:59:41.834Z INFO  [main] photocraft: presentation: autovsync, latency 1
+2026-11-25T21:59:41.834Z INFO  [main] photocraft: GPU startup: Plan { backend: Auto, env: None, reason: None, remember: false } (3.26 ms)
+2026-11-25T21:59:42.041Z WARN  [?] zbus::proxy: Failed to populate properties cache via GetAll: org.freedesktop.DBus.Error.ServiceUnknown: org.freedesktop.DBus.Error.ServiceUnknown. Property change streams will not produce values.
+2026-11-25T21:59:42.044Z INFO  [file dialog probe] photocraft::file_dialog_probe: file dialog backends: Findings { libdbus: Some(true), file_chooser_portal: Some(true), zenity: true }
+2026-11-25T21:59:42.076Z INFO  [main] photocraft_ui_egui::canvas::gpu_canvas: gpu canvas: target Rgba8Unorm, max texture 32768, tile 8192, 16F canvas Budget, video memory unknown
+2026-11-25T21:59:42.080Z INFO  [main] photocraft::tablet: tablet pressure: not available on this display server (Some(Wayland))
